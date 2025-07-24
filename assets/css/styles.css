@@ -1,11 +1,23 @@
-:root {
+:root,:root[data-theme="dark"] {
     --primary-color: #575757;
     --secondary-color: #2ecc71;
     --text-color: #ffffff;
     --background-color: #000000;
     --font-family: 'Arial', sans-serif;
 }
-
+:root,:root[data-theme="white"] {
+    --primary-color: #575757;
+    --secondary-color: #2ecc71;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --font-family: 'Arial', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+html[data-theme="light"] .brand__logo {
+    filter: invert(1);
+}
 *{
     margin: 0;
     padding: 0;
@@ -26,7 +38,8 @@ a{
     text-decoration: none;
     color: var(--primary-color);
 }
-.header__menu-link-active {
+.header__menu-link-active,
+.header__menu-link:hover {
     color: var(--text-color);
 }
 .header {
@@ -67,7 +80,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
     padding: 1% 1% 1% 1%;
 }
 
