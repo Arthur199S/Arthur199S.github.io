@@ -1,85 +1,311 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Silva | Portifolio</title>
-    <meta name="description" content="Portifólio de Arthur Silva, para demonstrar meus projetos e habilidades.">
-    
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Silva | Portfolio</title>
+  <meta name="description" content="Portfólio de Arthur Silva Correia para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__brand">
-            <img class="brand__logo"src="assets/images/favicon.ico" alt="Logo ASC">
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/images/favicon.ico" alt="Logo EA">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Bem Vindo</b> ao meu Portifólio!</h1>
+      <p>Arthur Silva Correia, São Paulo-SP, Estudante de Engenharia da Computação.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/ARTHUR199S" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/arthursilvacorreia199/" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Aprendendo cada dia mais</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Angular">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/javas.svg" alt="Logo TypeScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/css.svg" alt="Logo Bootstrap">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/html.svg" alt="Logo SASS">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/project.jpg" alt="Capa Josi's Box">
+        <div class="card__body">
+          <h3 class="card__title">Projeto Banco Fictício JavaFX</h3>
+          <p class="card__description">Projeto para fins didáticos desenvolvido em grupo na disciplina de Linguagens de Programação, uso do Java(+JavaFX) e MySQL</p>
+          <ul class="card__list">
+            <li class="card__item">Página de Login;</li>
+            <li class="card__item">Banco do MySQL armazenando informações das contas;</li>
+            <li class="card__item">Operações de saque.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/mysql.svg" alt="Logo TypeScript">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://github.com/lseixas/projeto-lp-java">
+            <button class="btn btn--primary">
+              <span>Repositório</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+            </a>
+          </div>
         </div>
-        <i id="toggleTheme" class="bi bi-brightness-alt-high"></i>
-    </header>
-    <nav>
-            <ul class="header__menu__desktop">
-                <li class="header__menu-item">
-                    <a href="#home" class="header__menu-link-active">
-                        <i class="bi bi-house"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#projetos" class="header__menu-link">
-                        <i class="bi bi-terminal"></i>
-                        <span>Projetos</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#Sobre" class="header__menu-link">
-                        <i class="bi bi-person"></i>
-                        <span>Sobre</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#Contato" class="header__menu-link">
-                        <i class="bi bi-envelope"></i>
-                        <span>Contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="header__menu__mobile">
-                <li class="header__menu-item">
-                    <a href="#home" class="header__menu-link-active">
-                        <i class="bi bi-house"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#projetos" class="header__menu-link">
-                        <i class="bi bi-terminal"></i>
-                        <span>Projetos</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#Sobre" class="header__menu-link">
-                        <i class="bi bi-person"></i>
-                        <span>Sobre</span>
-                    </a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#Contato" class="header__menu-link">
-                        <i class="bi bi-envelope"></i>
-                        <span>Contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <footer>
-            <p class="footer__text">
-                &copy; 2025. Todos os direitos reservados.
-                Arthur Silva Correia. Desenvolvido por
-                <a href="https://github.com/Arthur199S" target="_blank" rel="noopener">ARTHUR199S.</a>
-            </p>
-        </footer>
-        <script src="assets/js/engine.js"></script>
+      </div>
+      
+      <a href="https://github.com/Arthur199S">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/avatar.png" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Arthur Silva Correia. Gosto muito de jogos e tecnologia, esse meu gosto despertou um interresse na área da computação. Atualmente estou cursando Engenharia da Computação no Instituto Mauá de Tecnologia, ao mesmo tempo que fazendo cursos Front-End na DIO.
+        </p>
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Intermediário | Português Brasileiro: Nativo</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="https://www.linkedin.com/in/arthurcorreia199">
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Engenharia da Computação</h4>
+          <span>Fev 2023 - Atualmente</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>
+              Instituto Mauá de Tecnologia
+            </span>
+        </div>
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Sem Experiências profissionais até o momento</h4>
+          <!-- <span>Digital Innovation One. Fev 2023 - Atualmente</span>
+          <span>Produção de conteúdos educacionais direcionados a 
+            alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
+          </span>
+          <ul class="about__list">
+            <li class="about__item">Elaboração de ementas;</li>
+            <li class="about__item">Ministração de aulas assíncronas;</li>
+            <li class="about__item">Produção de materiais complementares.</li>
+          </ul> -->
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Versionamento de Código com Git e GitHub</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Fev 2023. 2h.
+              </p>
+              <p>
+                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
+                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
+                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
+                com o repositório remoto.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Contribuindo em um Projeto Open Source no GitHub</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Fev 2023. 1h.
+              </p>
+              <p>
+                Lab prático sobre colaboração em projetos de código aberto.
+              </p>
+            </div>
+          </div>
+            <!--
+            <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+              Digital Innovation One. Fev 2023. 2h.
+              </p>
+              <p>
+              Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+              </p>
+            </div>
+            </div>
+            -->
+        </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões. Contate-me via 
+      e-mail e conecte-se comigo através das minhas redes sociais.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/Arthur199S" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.instagram.com/arthursilvacorreia199/" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:arthursilvacorreia199@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">arthursilvacorreia199@gmail.com</span>
+      </button>
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2025. Todos os direitos reservados. Portfólio desenvolvido por
+      <a href="https://github.com/Arthur199S" target="_blank">Arthur Silva Correia</a>.
+    </p>
+  </footer>
+  <script src="assets/js/engine.js"></script>
 </body>
 </html>
