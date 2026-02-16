@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Silva | Portfolio</title>
-  <meta name="description" content="Portfólio de Arthur Silva Correia para compartilhar projetos e habilidades desenvolvidas.">
+  <title>Arthur Silva Correia | Portfolio</title>
+  <meta name="description"
+    content="Portfólio de Arthur Silva Correia para compartilhar projetos e habilidades desenvolvidas.">
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+  <canvas id="particles-canvas"></canvas>
   <header class="header">
     <nav class="header__nav">
       <ul class="menu menu--principal">
@@ -37,11 +41,23 @@
       </ul>
     </nav>
     <div class="header__brand">
-      <a href="#home">
-        <img class="brand__logo" src="assets/images/favicon.ico" alt="Logo EA">
+      <a href="#home" class="brand__link">
+        <span class="brand__text">ASC</span>
+        <img class="brand__logo" src="assets/images/icon.svg" alt="Logo EA">
       </a>
     </div>
     <div class="header__toggle">
+      <div class="language-select">
+        <select id="languageSelect">
+          <option value="pt">🇧🇷 PT</option>
+          <option value="en">🇺🇸 EN</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="zh">🇨🇳 CN</option>
+          <option value="hi">🇮🇳 HI</option>
+          <option value="ar">🇸🇦 AR</option>
+        </select>
+      </div>
       <i id="toggleTheme" class="bi bi-sun"></i>
     </div>
   </header>
@@ -76,31 +92,51 @@
 
   <main id="home">
     <div class="main__content1">
-      <h1><b>Bem Vindo</b> ao meu Portifólio!</h1>
-      <p>Arthur Silva Correia, São Paulo-SP, Estudante de Engenharia da Computação.</p> 
-      <ul class="menu menu--social">
-        <li>
-          <a class="menu__link" href="https://github.com/ARTHUR199S" target="_blank">
-            <i class="menu__icon bi bi-github"></i>
+      <div class="home__content">
+        <div class="home__text">
+          <h1><b>Bem Vindo</b> ao meu Portifólio!</h1>
+          <p>
+            Me chamo Arthur Silva Correia, tenho 21 anos e curso o 7º semestre de Engenharia da Computação no Instituto
+            Mauá de Tecnologia.
+          </p>
+          <p>
+            Tenho interesse em desenvolvimento de software e análise de dados, com facilidade para aprender novas
+            tecnologias. Fora do ambiente acadêmico, acompanho conteúdos de tecnologia e entretenimento digital.
+          </p>
+          <p>
+            Meus pontos fortes são responsabilidade, cumprimento de prazos e aprendizado rápido. Como ponto de
+            desenvolvimento, trabalho a comunicação e a ansiedade por meio de apresentações acadêmicas e atividades em
+            grupo, buscando evolução contínua.
+          </p>
+          <ul class="menu menu--social">
+            <li>
+              <a class="menu__link" href="https://github.com/ARTHUR199S" target="_blank">
+                <i class="menu__icon bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="menu__link" href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
+                <i class="menu__icon bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="menu__link" href="https://www.instagram.com/arthur199s/" target="_blank">
+                <i class="menu__icon bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="#projetos">
+            <button class="btn btn--primary">
+              <span>Ver Projetos</span>
+              <i class="bi bi-arrow-down-right"></i>
+            </button>
           </a>
-        </li>
-        <li>
-          <a class="menu__link" href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
-            <i class="menu__icon bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a class="menu__link" href="https://www.instagram.com/arthursilvacorreia199/" target="_blank">
-            <i class="menu__icon bi bi-instagram"></i>
-          </a>
-        </li>
-      </ul>
-      <a href="#projetos">
-        <button class="btn btn--primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>
-      </a>
+        </div>
+        <div class="home__image-container">
+          <img class="home__avatar" src="assets/images/praia.jpg" alt="Arthur Silva Correia">
+        </div>
+      </div>
+    </div>
     </div>
   </main>
 
@@ -108,16 +144,34 @@
     <h2>Aprendendo cada dia mais</h2>
     <ul class="technologies__list">
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Logo Angular">
+        <img class="technologies__logo" src="assets/images/technologies/java.svg" alt="Java">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/javas.svg" alt="Logo TypeScript">
+        <img class="technologies__logo" src="assets/images/technologies/javas.svg" alt="JavaScript">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/css.svg" alt="Logo Bootstrap">
+        <img class="technologies__logo" src="assets/images/technologies/css.svg" alt="CSS">
       </li>
       <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/html.svg" alt="Logo SASS">
+        <img class="technologies__logo" src="assets/images/technologies/html.svg" alt="HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/python.svg" alt="Python">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/kotlin.svg" alt="Kotlin">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/aws.svg" alt="AWS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/powerbi.svg" alt="Power BI">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/excel.svg" alt="Excel">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/arduino.svg" alt="Arduino">
       </li>
     </ul>
   </section>
@@ -126,10 +180,11 @@
     <h2>Projetos</h2>
     <div class="projects__container">
       <div class="projects__card">
-        <img class="card__cover" src="assets/images/project.jpg" alt="Capa Josi's Box">
+        <img class="card__cover" src="assets/images/project.jpg" alt="Tela Banco">
         <div class="card__body">
           <h3 class="card__title">Projeto Banco Fictício JavaFX</h3>
-          <p class="card__description">Projeto para fins didáticos desenvolvido em grupo na disciplina de Linguagens de Programação, uso do Java(+JavaFX) e MySQL</p>
+          <p class="card__description">Projeto para fins didáticos desenvolvido em grupo na disciplina de Linguagens de
+            Programação, uso do Java(+JavaFX) e MySQL</p>
           <ul class="card__list">
             <li class="card__item">Página de Login;</li>
             <li class="card__item">Banco do MySQL armazenando informações das contas;</li>
@@ -145,20 +200,20 @@
           </ul>
           <div class="card__buttons">
             <a href="https://github.com/lseixas/projeto-lp-java">
-            <button class="btn btn--primary">
-              <span>Repositório</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button>
+              <button class="btn btn--primary">
+                <span>Repositório</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
             </a>
           </div>
         </div>
       </div>
-      
+
       <a href="https://github.com/Arthur199S">
         <button class="btn btn--primary">
           <span>Ver Todos os Projetos</span>
           <i class="bi bi-arrow-up-right"></i>
-        </button>  
+        </button>
       </a>
     </div>
   </section>
@@ -168,18 +223,20 @@
       <img class="about__photo" src="assets/images/avatar.png" alt="">
       <div class="about__description">
         <h2>Sobre mim</h2>
-        <p>Arthur Silva Correia. Gosto muito de jogos e tecnologia, esse meu gosto despertou um interresse na área da computação. Atualmente estou cursando Engenharia da Computação no Instituto Mauá de Tecnologia, ao mesmo tempo que fazendo cursos Front-End na DIO.
+        <p>Arthur Silva Correia. Gosto muito de jogos e tecnologia, esse meu gosto despertou um interesse na área da
+          computação. Atualmente estou cursando Engenharia da Computação no Instituto Mauá de Tecnologia, ao mesmo tempo
+          que fazendo cursos Front-End na DIO.
         </p>
         <div class="about__icons">
           <i class="bi bi-translate"></i>
-          <span>Inglês: Intermediário | Português Brasileiro: Nativo</span>
+          <span>Inglês: Avançado | Português Brasileiro: Nativo</span>
         </div>
         <div class="description__buttons">
           <a href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
             <button class="btn btn--primary">
               <span>Conecte-se Comigo</span>
               <i class="bi bi-arrow-up-right"></i>
-            </button> 
+            </button>
           </a>
           <a href="https://www.linkedin.com/in/arthurcorreia199">
             <button class="btn">
@@ -191,7 +248,7 @@
     </div>
     <div class="about__content2">
       <div class="col1">
-        <div class="row1">
+        <div class="row1 about__card">
           <h3>Formação</h3>
           <h4>Engenharia da Computação</h4>
           <span>Fev 2023 - Atualmente</span>
@@ -200,94 +257,218 @@
             <span>
               Instituto Mauá de Tecnologia
             </span>
-        </div>
-        <div class="row2">
-          <h3>Experiências</h3>
-          <h4>Sem Experiências profissionais até o momento</h4>
-          <!-- <span>Digital Innovation One. Fev 2023 - Atualmente</span>
-          <span>Produção de conteúdos educacionais direcionados a 
-            alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
-          </span>
-          <ul class="about__list">
-            <li class="about__item">Elaboração de ementas;</li>
-            <li class="about__item">Ministração de aulas assíncronas;</li>
-            <li class="about__item">Produção de materiais complementares.</li>
-          </ul> -->
+          </div>
         </div>
       </div>
-      <div class="col2">
-        <h3>Cursos</h3>
-        <div id="accordion">
-          <div class="accordion__item active">
-            <button class="accordion__header start">
-              <span>Versionamento de Código com Git e GitHub</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
-                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
-                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
-                com o repositório remoto.
-              </p>
-            </div>
+      <div class="row2 about__card">
+        <h3>Experiências</h3>
+        <h4>Sem Experiências profissionais até o momento</h4>
+      </div>
+      <div class="row3 about__card">
+        <h3>Projetos Acadêmicos</h3>
+        <h4>Desenvolvimento de Aplicativos com a Linguagem Kotlin</h4>
+        <span>Ago 2025 - Nov 2025</span>
+        <p>
+          Desenvolvimento em grupo de um aplicativo Android, solicitado pela empresa parceira, Advocacia Céspedes
+          Lourenço, com foco em uma calculadora penal para auxiliar em cálculos jurídicos.
+        </p>
+        <ul class="about__list">
+          <li class="about__item">Encontros semanais para aprendizado do básico da linguagem Kotlin;</li>
+          <li class="about__item">Visita de representante da empresa para apresentação da ideia e requisitos da
+            aplicação;</li>
+          <li class="about__item">Entregas parciais ao longo das aulas, garantindo evolução contínua no domínio da
+            linguagem;</li>
+          <li class="about__item">Entrega final: apresentação do aplicativo concluído para a empresa parceira.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col2 about__card">
+      <h3>Cursos</h3>
+      <div id="accordion">
+        <div class="accordion__item active">
+          <button class="accordion__header start">
+            <span>Randstad - Análise de Dados</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>DIO | 2025 – 104 horas</p>
           </div>
-          <div class="accordion__item">
-            <button class="accordion__header">
-              <span>Contribuindo em um Projeto Open Source no GitHub</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 1h.
-              </p>
-              <p>
-                Lab prático sobre colaboração em projetos de código aberto.
-              </p>
-            </div>
-          </div>
-            <!--
-            <div class="accordion__item">
-            <button class="accordion__header end">
-              <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body end">
-              <p>
-              Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-              Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
-              </p>
-            </div>
-            </div>
-            -->
         </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Fundamentos de Computação em Nuvem – AWS Academy</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2025 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Desenvolvimento de Aplicativos com a Linguagem Kotlin</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2025 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Brincando com a eletrônica na prática</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Com tutoria de engenheiro e alunos da engenharia - Instituto Mauá de Tecnologia | 2025 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Princípios de Aprendizado de Máquina</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2025 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Ri Happy - Front-end do Zero</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>DIO | 2025 – 75 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Power BI Básico</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2024 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Introdução a Automação e Eletrônica Básica</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2024 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Introdução a Ciência de Dados</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2023 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">
+            <span>Construção de Gráficos e Análise de Dados em Excel</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body">
+            <p>Instituto Mauá de Tecnologia | 2023 – 40 horas</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header end">
+            <span>Inglês</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="accordion__body end">
+            <p>Cultura Inglesa | 2022 – 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row4 about__card">
+      <h3>Conhecimentos em Tecnologia</h3>
+      <div class="skills__container">
+        <span class="skill__tag">Pacote Office: Intermediário</span>
+        <span class="skill__tag">Power BI: Intermediário</span>
+        <span class="skill__tag">MATLAB: Intermediário</span>
+        <span class="skill__tag">Orange: Básico</span>
+        <span class="skill__tag">SolidWorks: Básico</span>
+        <span class="skill__tag">Python: Básico</span>
+        <span class="skill__tag">R: Básico</span>
+        <span class="skill__tag">C: Básico</span>
+        <span class="skill__tag">XML: Básico</span>
+        <span class="skill__tag">Kotlin: Intermediário</span>
+        <span class="skill__tag">Java: Intermediário</span>
+        <span class="skill__tag">Code Blocks: Básico</span>
+        <span class="skill__tag">Android Studio: Intermediário</span>
+        <span class="skill__tag">VS Code: Intermediário</span>
+        <span class="skill__tag">AWS: Intermediário</span>
+        <span class="skill__tag">GitHub: Intermediário</span>
+        <span class="skill__tag">Azure OpenAI: Básico</span>
+        <span class="skill__tag">Azure Machine Learning: Básico</span>
+        <span class="skill__tag">MySQL: Básico</span>
+        <span class="skill__tag">SQL: Básico</span>
+        <span class="skill__tag">ETL: Básico</span>
+        <span class="skill__tag">Ferramentas de IA: Intermediário</span>
+      </div>
+    </div>
+    <div class="row5 about__card">
+      <h3>Interesses</h3>
+      <ul class="interests__list">
+        <li class="interest__item">
+          <i class="bi bi-pc-display"></i>
+          <span>Montagem e manutenção de computadores</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-robot"></i>
+          <span>Aprendizado de máquina</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-cloud"></i>
+          <span>Estudo de cloud computing (AWS, Azure)</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-speedometer2"></i>
+          <span>Testes de desempenho em sistemas</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-grid-3x3"></i>
+          <span>Sudoku</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-suit-spade"></i>
+          <span>Jogos de cartas estratégicos</span>
+        </li>
+        <li class="interest__item">
+          <i class="bi bi-puzzle"></i>
+          <span>Jogos de enigmas</span>
+        </li>
+      </ul>
+    </div>
   </section>
-  
+
   <section id="contato" class="contact">
     <h2>Contate-me</h2>
-    <p>Estou disponível para serviços e novas conexões. Contate-me via 
+    <p>Estou disponível para serviços e novas conexões. Contate-me via
       e-mail e conecte-se comigo através das minhas redes sociais.
     </p>
-    <ul class="menu menu--social">
-      <li>
+    <ul class="interests__list">
+      <li class="interest__item">
         <a class="menu__link" href="https://github.com/Arthur199S" target="_blank">
           <i class="menu__icon bi bi-github"></i>
           <span>GitHub</span>
         </a>
       </li>
-      <li>
+      <li class="interest__item">
         <a class="menu__link" href="https://www.linkedin.com/in/arthurcorreia199" target="_blank">
           <i class="menu__icon bi bi-linkedin"></i>
           <span>LinkedIn</span>
         </a>
       </li>
-      <li>
-        <a class="menu__link" href="https://www.instagram.com/arthursilvacorreia199/" target="_blank">
+      <li class="interest__item">
+        <a class="menu__link" href="https://www.instagram.com/arthur199s/" target="_blank">
           <i class="menu__icon bi bi-instagram"></i>
           <span>Instagram</span>
         </a>
@@ -306,6 +487,13 @@
       <a href="https://github.com/Arthur199S" target="_blank">Arthur Silva Correia</a>.
     </p>
   </footer>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
   <script src="assets/js/engine.js"></script>
 </body>
+
 </html>
