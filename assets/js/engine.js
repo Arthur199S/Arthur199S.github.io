@@ -261,17 +261,29 @@ const translations = {
     experienceText: "Sem Experiências profissionais até o momento",
     acadProjectTitle: "Desenvolvimento de Aplicativos com a Linguagem Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
-    acadProjectDesc: "Aplicativo de Lista de Tarefas (To-Do List) com armazenamento local (SharedPreferences).",
-    course1Title: "Bootcamp Cloud AWS",
-    course1Desc: "DIO | 2024 – 67 horas",
-    course2Title: "Formação Lógica de Programação",
-    course2Desc: "DIO | 2024 – 39 horas",
-    course3Title: "Introdução a Ciência de Dados",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
-    course4Title: "Construção de Gráficos e Análise de Dados em Excel",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
-    course5Title: "Inglês",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "Desenvolvimento em grupo de um aplicativo Android, solicitado pela empresa parceira, Advocacia Céspedes Lourenço, com foco em uma calculadora penal.",
+    course1Title: "Randstad - Análise de Dados",
+    course1Desc: "DIO | 2025 – 104 horas",
+    course2Title: "Fundamentos de Computação em Nuvem – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course3Title: "Desenvolvimento de Aplicativos com a Linguagem Kotlin",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course4Title: "Brincando com a eletrônica na prática",
+    course4Desc: "Com tutoria de engenheiro e alunos da engenharia - Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course5Title: "Princípios de Aprendizado de Máquina",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course6Title: "Ri Happy - Front-end do Zero",
+    course6Desc: "DIO | 2025 – 75 horas",
+    course7Title: "Power BI Básico",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course8Title: "Introdução a Automação e Eletrônica Básica",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course9Title: "Introdução a Ciência de Dados",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course10Title: "Construção de Gráficos e Análise de Dados em Excel",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course11Title: "Inglês",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "Inglês: Avançado | Português Brasileiro: Nativo",
     interestPC: "Montagem e manutenção de computadores",
     interestML: "Aprendizado de máquina",
@@ -279,7 +291,19 @@ const translations = {
     interestPerf: "Testes de desempenho em sistemas",
     interestSudoku: "Sudoku",
     interestCards: "Jogos de cartas estratégicos",
-    interestEnigmas: "Jogos de enigmas"
+    interestEnigmas: "Jogos de enigmas",
+    projectFeature1: "Página de Login;",
+    projectFeature2: "Banco do MySQL armazenando informações das contas;",
+    projectFeature3: "Operações de saque.",
+    repository: "Repositório",
+    acadDetail1: "Encontros semanais para aprendizado do básico da linguagem Kotlin;",
+    acadDetail2: "Visita de representante da empresa para apresentação da ideia e requisitos da aplicação;",
+    acadDetail3: "Entregas parciais ao longo das aulas, garantindo evolução contínua no domínio da linguagem;",
+    acadDetail4: "Entrega final: apresentação do aplicativo concluído para a empresa parceira.",
+    skillBasic: "Básico",
+    skillIntermediate: "Intermediário",
+    skillOffice: "Pacote Office",
+    skillAITools: "Ferramentas de IA"
   },
 
   en: {
@@ -315,17 +339,29 @@ const translations = {
     experienceText: "No professional experience yet",
     acadProjectTitle: "App Development with Kotlin",
     acadProjectDate: "Aug 2025 - Nov 2025",
-    acadProjectDesc: "To-Do List Application with local storage (SharedPreferences).",
-    course1Title: "AWS Cloud Bootcamp",
-    course1Desc: "DIO | 2024 – 67 hours",
-    course2Title: "Programming Logic Formation",
-    course2Desc: "DIO | 2024 – 39 hours",
-    course3Title: "Introduction to Data Science",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
-    course4Title: "Graph Construction and Data Analysis in Excel",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
-    course5Title: "English",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "Group development of an Android app, requested by partner company Advocacia Céspedes Lourenço, focused on a criminal sentence calculator.",
+    course1Title: "Randstad - Data Analysis",
+    course1Desc: "DIO | 2025 – 104 hours",
+    course2Title: "Cloud Computing Fundamentals – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 hours",
+    course3Title: "App Development with Kotlin",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 hours",
+    course4Title: "Hands-on Electronics",
+    course4Desc: "With engineer and engineering student tutoring - Instituto Mauá de Tecnologia | 2025 – 40 hours",
+    course5Title: "Machine Learning Principles",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 hours",
+    course6Title: "Ri Happy - Front-end from Scratch",
+    course6Desc: "DIO | 2025 – 75 hours",
+    course7Title: "Power BI Basics",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 hours",
+    course8Title: "Introduction to Automation and Basic Electronics",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 hours",
+    course9Title: "Introduction to Data Science",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
+    course10Title: "Graph Construction and Data Analysis in Excel",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
+    course11Title: "English",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "English: Advanced | Portuguese: Native",
     interestPC: "Computer Assembly and Maintenance",
     interestML: "Machine Learning",
@@ -333,7 +369,19 @@ const translations = {
     interestPerf: "System Performance Testing",
     interestSudoku: "Sudoku",
     interestCards: "Strategic Card Games",
-    interestEnigmas: "Puzzle Games"
+    interestEnigmas: "Puzzle Games",
+    projectFeature1: "Login Page;",
+    projectFeature2: "MySQL database storing account information;",
+    projectFeature3: "Withdrawal operations.",
+    repository: "Repository",
+    acadDetail1: "Weekly meetings for learning the basics of the Kotlin language;",
+    acadDetail2: "Visit from company representative to present the idea and application requirements;",
+    acadDetail3: "Partial deliveries throughout classes, ensuring continuous progress in mastering the language;",
+    acadDetail4: "Final delivery: presentation of the completed app to the partner company.",
+    skillBasic: "Basic",
+    skillIntermediate: "Intermediate",
+    skillOffice: "Office Suite",
+    skillAITools: "AI Tools"
   },
   es: {
     welcome: "<b>Bienvenido</b> a mi Portafolio!",
@@ -368,17 +416,29 @@ const translations = {
     experienceText: "Sin experiencia profesional por el momento",
     acadProjectTitle: "Desarrollo de Aplicaciones con Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
-    acadProjectDesc: "Aplicación de Lista de Tareas (To-Do List) con almacenamiento local (SharedPreferences).",
-    course1Title: "Bootcamp Cloud AWS",
-    course1Desc: "DIO | 2024 – 67 horas",
-    course2Title: "Formación Lógica de Programación",
-    course2Desc: "DIO | 2024 – 39 horas",
-    course3Title: "Introducción a Ciencia de Datos",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
-    course4Title: "Construcción de Gráficos y Análisis de Datos en Excel",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
-    course5Title: "Inglés",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "Desarrollo en grupo de una aplicación Android, solicitada por la empresa socia Advocacia Céspedes Lourenço, enfocada en una calculadora penal.",
+    course1Title: "Randstad - Análisis de Datos",
+    course1Desc: "DIO | 2025 – 104 horas",
+    course2Title: "Fundamentos de Computación en la Nube – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course3Title: "Desarrollo de Aplicaciones con Kotlin",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course4Title: "Jugando con la electrónica en la práctica",
+    course4Desc: "Con tutoría de ingeniero y alumnos de ingeniería - Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course5Title: "Principios de Aprendizaje Automático",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 horas",
+    course6Title: "Ri Happy - Front-end desde Cero",
+    course6Desc: "DIO | 2025 – 75 horas",
+    course7Title: "Power BI Básico",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course8Title: "Introducción a Automatización y Electrónica Básica",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course9Title: "Introducción a Ciencia de Datos",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course10Title: "Construcción de Gráficos y Análisis de Datos en Excel",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course11Title: "Inglés",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "Inglés: Avanzado | Portugués: Nativo",
     interestPC: "Montaje y Mantenimiento de Computadoras",
     interestML: "Aprendizaje Automático",
@@ -386,7 +446,19 @@ const translations = {
     interestPerf: "Pruebas de Rendimiento de Sistemas",
     interestSudoku: "Sudoku",
     interestCards: "Juegos de Cartas Estratégicos",
-    interestEnigmas: "Juegos de Enigmas"
+    interestEnigmas: "Juegos de Enigmas",
+    projectFeature1: "Página de Inicio de Sesión;",
+    projectFeature2: "Base de datos MySQL almacenando información de las cuentas;",
+    projectFeature3: "Operaciones de retiro.",
+    repository: "Repositorio",
+    acadDetail1: "Encuentros semanales para aprendizaje de lo básico del lenguaje Kotlin;",
+    acadDetail2: "Visita del representante de la empresa para presentación de la idea y requisitos de la aplicación;",
+    acadDetail3: "Entregas parciales a lo largo de las clases, garantizando evolución continua en el dominio del lenguaje;",
+    acadDetail4: "Entrega final: presentación de la aplicación terminada a la empresa socia.",
+    skillBasic: "Básico",
+    skillIntermediate: "Intermedio",
+    skillOffice: "Paquete Office",
+    skillAITools: "Herramientas de IA"
   },
   fr: {
     welcome: "<b>Bienvenue</b> sur mon Portfolio !",
@@ -421,17 +493,29 @@ const translations = {
     experienceText: "Aucune expérience professionnelle pour le moment",
     acadProjectTitle: "Développement d'App avec Kotlin",
     acadProjectDate: "Août 2025 - Nov 2025",
-    acadProjectDesc: "Application To-Do List avec stockage local (SharedPreferences).",
-    course1Title: "Bootcamp Cloud AWS",
-    course1Desc: "DIO | 2024 – 67 heures",
-    course2Title: "Formation Logique de Programmation",
-    course2Desc: "DIO | 2024 – 39 heures",
-    course3Title: "Introduction à la Science des Données",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
-    course4Title: "Construction de Graphiques et Analyse de Données sur Excel",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
-    course5Title: "Anglais",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "Développement en groupe d'une application Android, demandée par l'entreprise partenaire Advocacia Céspedes Lourenço, axée sur un calculateur de peines pénales.",
+    course1Title: "Randstad - Analyse de Données",
+    course1Desc: "DIO | 2025 – 104 heures",
+    course2Title: "Fondamentaux du Cloud Computing – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 heures",
+    course3Title: "Développement d'Applications avec Kotlin",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 heures",
+    course4Title: "S'amuser avec l'électronique en pratique",
+    course4Desc: "Avec tutorat d'ingénieur et d'étudiants en ingénierie - Instituto Mauá de Tecnologia | 2025 – 40 heures",
+    course5Title: "Principes d'Apprentissage Automatique",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 heures",
+    course6Title: "Ri Happy - Front-end à partir de Zéro",
+    course6Desc: "DIO | 2025 – 75 heures",
+    course7Title: "Power BI Basique",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 heures",
+    course8Title: "Introduction à l'Automatisation et Électronique de Base",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 heures",
+    course9Title: "Introduction à la Science des Données",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
+    course10Title: "Construction de Graphiques et Analyse de Données sur Excel",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
+    course11Title: "Anglais",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "Anglais : Avancé | Portugais : Natif",
     interestPC: "Assemblage et Maintenance d'Ordinateurs",
     interestML: "Apprentissage Automatique",
@@ -439,7 +523,19 @@ const translations = {
     interestPerf: "Tests de Performance Système",
     interestSudoku: "Sudoku",
     interestCards: "Jeux de Cartes Stratégiques",
-    interestEnigmas: "Jeux d'Énigmes"
+    interestEnigmas: "Jeux d'Énigmes",
+    projectFeature1: "Page de Connexion ;",
+    projectFeature2: "Base de données MySQL stockant les informations des comptes ;",
+    projectFeature3: "Opérations de retrait.",
+    repository: "Dépôt",
+    acadDetail1: "Rencontres hebdomadaires pour l'apprentissage des bases du langage Kotlin ;",
+    acadDetail2: "Visite du représentant de l'entreprise pour présentation de l'idée et des exigences de l'application ;",
+    acadDetail3: "Livraisons partielles tout au long des cours, assurant une progression continue dans la maîtrise du langage ;",
+    acadDetail4: "Livraison finale : présentation de l'application terminée à l'entreprise partenaire.",
+    skillBasic: "Basique",
+    skillIntermediate: "Intermédiaire",
+    skillOffice: "Suite Office",
+    skillAITools: "Outils d'IA"
   },
   zh: {
     welcome: "<b>欢迎</b>来到我的作品集！",
@@ -474,17 +570,29 @@ const translations = {
     experienceText: "目前没有专业经验",
     acadProjectTitle: "使用Kotlin开发应用程序",
     acadProjectDate: "2025年8月 - 2025年11月",
-    acadProjectDesc: "带有本地存储(SharedPreferences)的待办事项列表应用程序。",
-    course1Title: "AWS Cloud Bootcamp",
-    course1Desc: "DIO | 2024 – 67 小时",
-    course2Title: "编程逻辑培训",
-    course2Desc: "DIO | 2024 – 39 小时",
-    course3Title: "数据科学导论",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
-    course4Title: "Excel中的图表构建和数据分析",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
-    course5Title: "英语",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "团队开发Android应用程序，受合作企业Advocacia Céspedes Lourenço委托，专注于刑事计算器。",
+    course1Title: "Randstad - 数据分析",
+    course1Desc: "DIO | 2025 – 104 小时",
+    course2Title: "云计算基础 – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 小时",
+    course3Title: "使用Kotlin开发应用程序",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 小时",
+    course4Title: "动手实践电子学",
+    course4Desc: "由工程师和工程学生指导 - Instituto Mauá de Tecnologia | 2025 – 40 小时",
+    course5Title: "机器学习原理",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 小时",
+    course6Title: "Ri Happy - 从零开始前端",
+    course6Desc: "DIO | 2025 – 75 小时",
+    course7Title: "Power BI 基础",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 小时",
+    course8Title: "自动化和基础电子学导论",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 小时",
+    course9Title: "数据科学导论",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
+    course10Title: "Excel中的图表构建和数据分析",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
+    course11Title: "英语",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "英语：高级 | 葡萄牙语：母语",
     interestPC: "电脑组装与维护",
     interestML: "机器学习",
@@ -492,7 +600,19 @@ const translations = {
     interestPerf: "系统性能测试",
     interestSudoku: "数独",
     interestCards: "战略纸牌游戏",
-    interestEnigmas: "谜题游戏"
+    interestEnigmas: "谜题游戏",
+    projectFeature1: "登录页面；",
+    projectFeature2: "MySQL数据库存储账户信息；",
+    projectFeature3: "取款操作。",
+    repository: "代码仓库",
+    acadDetail1: "每周学习Kotlin语言基础；",
+    acadDetail2: "企业代表来访介绍项目理念和应用需求；",
+    acadDetail3: "课程中进行阶段性交付，确保语言掌握的持续进步；",
+    acadDetail4: "最终交付：向合作企业展示完成的应用程序。",
+    skillBasic: "基础",
+    skillIntermediate: "中级",
+    skillOffice: "Office 套件",
+    skillAITools: "AI 工具"
   },
   hi: {
     welcome: "<b>स्वागत है</b> मेरे पोर्टफोलियो में!",
@@ -527,17 +647,29 @@ const translations = {
     experienceText: "अभी तक कोई पेशेवर अनुभव नहीं",
     acadProjectTitle: "कोटलिन के साथ ऐप विकास",
     acadProjectDate: "अगस्त 2025 - नवंबर 2025",
-    acadProjectDesc: "स्थानीय भंडारण (SharedPreferences) के साथ टू-डू लिस्ट एप्लिकेशन।",
-    course1Title: "AWS क्लाउड बूटकैंप",
-    course1Desc: "DIO | 2024 – 67 घंटे",
-    course2Title: "प्रोग्रामिंग लॉजिक फॉर्मेशन",
-    course2Desc: "DIO | 2024 – 39 घंटे",
-    course3Title: "डेटा साइंस का परिचय",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
-    course4Title: "एक्सेल में ग्राफ निर्माण और डेटा विश्लेषण",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
-    course5Title: "अंग्रेज़ी",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "साझेदार कंपनी Advocacia Céspedes Lourenço द्वारा अनुरोधित, आपराधिक कैलकुलेटर पर केंद्रित Android ऐप का सामूहिक विकास।",
+    course1Title: "Randstad - डेटा विश्लेषण",
+    course1Desc: "DIO | 2025 – 104 घंटे",
+    course2Title: "क्लाउड कंप्यूटिंग के मूल सिद्धांत – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 घंटे",
+    course3Title: "कोटलिन के साथ ऐप विकास",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 घंटे",
+    course4Title: "व्यावहारिक इलेक्ट्रॉनिक्स",
+    course4Desc: "इंजीनियर और इंजीनियरिंग छात्रों द्वारा मार्गदर्शन - Instituto Mauá de Tecnologia | 2025 – 40 घंटे",
+    course5Title: "मशीन लर्निंग के सिद्धांत",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 घंटे",
+    course6Title: "Ri Happy - शून्य से फ्रंट-एंड",
+    course6Desc: "DIO | 2025 – 75 घंटे",
+    course7Title: "Power BI मूल भूत",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 घंटे",
+    course8Title: "ऑटोमेशन और मूल इलेक्ट्रॉनिक्स का परिचय",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 घंटे",
+    course9Title: "डेटा साइंस का परिचय",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
+    course10Title: "एक्सेल में ग्राफ निर्माण और डेटा विश्लेषण",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
+    course11Title: "अंग्रेज़ी",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "अंग्रेजी: उन्नत | पुर्तगाली: मूल निवासी",
     interestPC: "कंप्यूटर असेंबली और रखरखाव",
     interestML: "मशीन लर्निंग",
@@ -545,7 +677,19 @@ const translations = {
     interestPerf: "सिस्टम प्रदर्शन परीक्षण",
     interestSudoku: "सुडोकू",
     interestCards: "रणनीतिक कार्ड गेम",
-    interestEnigmas: "पहेली खेल"
+    interestEnigmas: "पहेली खेल",
+    projectFeature1: "लॉगिन पेज;",
+    projectFeature2: "MySQL डेटाबेस खाता जानकारी संग्रहीत करता है;",
+    projectFeature3: "निकासी संचालन।",
+    repository: "रिपॉजिटरी",
+    acadDetail1: "कोटलिन भाषा की बुनियादी बातें सीखने के लिए साप्ताहिक बैठकें;",
+    acadDetail2: "कंपनी प्रतिनिधि का विचार और आवेदन आवश्यकताओं की प्रस्तुति के लिए दौरा;",
+    acadDetail3: "कक्षाओं के दौरान आंशिक डिलीवरी, भाषा में निरंतर प्रगति सुनिश्चित करते हुए;",
+    acadDetail4: "अंतिम डिलीवरी: साझेदार कंपनी को पूर्ण ऐप की प्रस्तुति।",
+    skillBasic: "बुनियादी",
+    skillIntermediate: "मध्यवर्ती",
+    skillOffice: "ऑफिस सूट",
+    skillAITools: "AI उपकरण"
   },
   ar: {
     welcome: "<b>أهلاً بك</b> في محفظتي!",
@@ -580,17 +724,29 @@ const translations = {
     experienceText: "لا توجد خبرة مهنية حتى الآن",
     acadProjectTitle: "تطوير التطبيقات باستخدام Kotlin",
     acadProjectDate: "أغسطس 2025 - نوفمبر 2025",
-    acadProjectDesc: "تطبيق قائمة المهام (To-Do List) مع التخزين المحلي (SharedPreferences).",
-    course1Title: "معسكر AWS السحابي",
-    course1Desc: "DIO | 2024 – 67 ساعة",
-    course2Title: "تشكيل منطق البرمجة",
-    course2Desc: "DIO | 2024 – 39 ساعة",
-    course3Title: "مقدمة في علم البيانات",
-    course3Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
-    course4Title: "بناء الرسوم البيانية وتحليل البيانات في Excel",
-    course4Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
-    course5Title: "الإنجليزية",
-    course5Desc: "Cultura Inglesa | 2022 – 2025",
+    acadProjectDesc: "تطوير جماعي لتطبيق أندرويد، بطلب من الشركة الشريكة Advocacia Céspedes Lourenço، يركز على آلة حاسبة للعقوبات الجنائية.",
+    course1Title: "Randstad - تحليل البيانات",
+    course1Desc: "DIO | 2025 – 104 ساعة",
+    course2Title: "أساسيات الحوسبة السحابية – AWS Academy",
+    course2Desc: "Instituto Mauá de Tecnologia | 2025 – 40 ساعة",
+    course3Title: "تطوير التطبيقات باستخدام Kotlin",
+    course3Desc: "Instituto Mauá de Tecnologia | 2025 – 40 ساعة",
+    course4Title: "اللعب بالإلكترونيات عملياً",
+    course4Desc: "بإشراف مهندس وطلاب هندسة - Instituto Mauá de Tecnologia | 2025 – 40 ساعة",
+    course5Title: "مبادئ التعلم الآلي",
+    course5Desc: "Instituto Mauá de Tecnologia | 2025 – 40 ساعة",
+    course6Title: "Ri Happy - الواجهة الأمامية من الصفر",
+    course6Desc: "DIO | 2025 – 75 ساعة",
+    course7Title: "Power BI الأساسي",
+    course7Desc: "Instituto Mauá de Tecnologia | 2024 – 40 ساعة",
+    course8Title: "مقدمة في الأتمتة والإلكترونيات الأساسية",
+    course8Desc: "Instituto Mauá de Tecnologia | 2024 – 40 ساعة",
+    course9Title: "مقدمة في علم البيانات",
+    course9Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
+    course10Title: "بناء الرسوم البيانية وتحليل البيانات في Excel",
+    course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
+    course11Title: "الإنجليزية",
+    course11Desc: "Cultura Inglesa | 2022 – 2025",
     languageProficiency: "الإنكليزية: متقدم | البرتغالية: أصلي",
     interestPC: "تجميع وصيانة الكمبيوتر",
     interestML: "التعلم الآلي",
@@ -598,8 +754,19 @@ const translations = {
     interestPerf: "اختبار أداء النظام",
     interestSudoku: "سودوكو",
     interestCards: "ألعاب الورق الاستراتيجية",
-    interestEnigmas: "ألعاب الألغاز"
-
+    interestEnigmas: "ألعاب الألغاز",
+    projectFeature1: "صفحة تسجيل الدخول؛",
+    projectFeature2: "قاعدة بيانات MySQL تخزن معلومات الحسابات؛",
+    projectFeature3: "عمليات السحب.",
+    repository: "المستودع",
+    acadDetail1: "لقاءات أسبوعية لتعلم أساسيات لغة Kotlin؛",
+    acadDetail2: "زيارة ممثل الشركة لعرض الفكرة ومتطلبات التطبيق؛",
+    acadDetail3: "تسليمات جزئية خلال الفصول الدراسية، مع ضمان التقدم المستمر في إتقان اللغة؛",
+    acadDetail4: "التسليم النهائي: تقديم التطبيق المكتمل للشركة الشريكة.",
+    skillBasic: "أساسي",
+    skillIntermediate: "متوسط",
+    skillOffice: "حزمة أوفيس",
+    skillAITools: "أدوات الذكاء الاصطناعي"
   }
 };
 
@@ -642,6 +809,18 @@ languageSelect.addEventListener("change", (e) => {
   const viewAllBtn = document.querySelector(".projects__container > a .btn span");
   if (viewAllBtn) viewAllBtn.textContent = t.viewAll;
 
+  // Project card feature list
+  const cardItems = document.querySelectorAll(".card__item");
+  if (cardItems.length >= 3) {
+    cardItems[0].textContent = t.projectFeature1;
+    cardItems[1].textContent = t.projectFeature2;
+    cardItems[2].textContent = t.projectFeature3;
+  }
+
+  // Repository button
+  const repoBtn = document.querySelector(".card__buttons .btn span");
+  if (repoBtn) repoBtn.textContent = t.repository;
+
   // About Section
   const aboutMeTitle = document.querySelector("#sobre h2");
   if (aboutMeTitle) aboutMeTitle.textContent = t.aboutMe;
@@ -655,6 +834,10 @@ languageSelect.addEventListener("change", (e) => {
     aboutBtns[1].textContent = t.resume;
   }
 
+  // Language Proficiency text (below bio)
+  const langProfSpan = document.querySelector(".about__description .about__icons span");
+  if (langProfSpan) langProfSpan.textContent = t.languageProficiency;
+
   // Headings in About Columns
   const headings = document.querySelectorAll(".about__card h3");
   // Simple heuristic mapping based on order or content
@@ -662,49 +845,75 @@ languageSelect.addEventListener("change", (e) => {
     const text = h.textContent.toLowerCase();
     if (text.includes("formação") || text.includes("education") || text.includes("formación") || text.includes("formation") || text.includes("教育") || text.includes("शिक्षा") || text.includes("التعليم")) {
       h.textContent = t.formation;
-      // Update Formation Content (sibling div)
-      const content = h.nextElementSibling;
-      if (content) {
-        content.querySelector("h4").textContent = t.degreeName;
-        content.querySelector("span").textContent = t.degreeDate;
+      const card = h.closest(".about__card");
+      if (card) {
+        const h4 = card.querySelector("h4");
+        if (h4) h4.textContent = t.degreeName;
+        const span = card.querySelector("span");
+        if (span) span.textContent = t.degreeDate;
       }
     }
-    else if (text.includes("experiências") || text.includes("sexperiences") || text.includes("expériences") || text.includes("经验") || text.includes("अनुभव") || text.includes("الخبرات")) {
+    else if (text.includes("experiências") || text.includes("experiences") || text.includes("experiencias") || text.includes("expériences") || text.includes("经验") || text.includes("अनुभव") || text.includes("الخبرات")) {
       h.textContent = t.experiences;
-      const content = h.nextElementSibling;
-      if (content) content.querySelector("p").textContent = t.experienceText;
+      const card = h.closest(".about__card");
+      if (card) {
+        const h4 = card.querySelector("h4");
+        if (h4) h4.textContent = t.experienceText;
+      }
     }
     else if (text.includes("projetos acadêmicos") || text.includes("academic projects") || text.includes("proyectos académicos") || text.includes("projets académiques") || text.includes("学术项目") || text.includes("अकादमिक परियोजनाएं") || text.includes("المشاريع الأكاديمية")) {
       h.textContent = t.academicProjects;
-      const content = h.nextElementSibling;
-      if (content) {
-        content.querySelector("h4").textContent = t.acadProjectTitle;
-        content.querySelector("span").textContent = t.acadProjectDate;
-        content.querySelector("li").textContent = t.acadProjectDesc;
+      const card = h.closest(".about__card");
+      if (card) {
+        const h4 = card.querySelector("h4");
+        if (h4) h4.textContent = t.acadProjectTitle;
+        const span = card.querySelector("span");
+        if (span) span.textContent = t.acadProjectDate;
+        // Update description paragraph
+        const descP = card.querySelector("p");
+        if (descP) descP.textContent = t.acadProjectDesc;
+        // Update detail list items
+        const listItems = card.querySelectorAll(".about__item");
+        if (listItems.length >= 4) {
+          listItems[0].textContent = t.acadDetail1;
+          listItems[1].textContent = t.acadDetail2;
+          listItems[2].textContent = t.acadDetail3;
+          listItems[3].textContent = t.acadDetail4;
+        }
       }
     }
     else if (text.includes("cursos") || text.includes("courses") || text.includes("cours") || text.includes("课程") || text.includes("पाठ्यक्रम") || text.includes("الدورات")) {
       h.textContent = t.courses;
-      // Courses are in a separate column usually, let's find the accordion items
+      // Courses are in accordion items - update all 11
       const accordionItems = document.querySelectorAll(".accordion__item");
-      if (accordionItems.length >= 5) {
-        accordionItems[0].querySelector(".accordion__header").textContent = t.course1Title;
-        accordionItems[0].querySelector(".accordion__content p").textContent = t.course1Desc;
-        accordionItems[1].querySelector(".accordion__header").textContent = t.course2Title;
-        accordionItems[1].querySelector(".accordion__content p").textContent = t.course2Desc;
-        accordionItems[2].querySelector(".accordion__header").textContent = t.course3Title;
-        accordionItems[2].querySelector(".accordion__content p").textContent = t.course3Desc;
-        accordionItems[3].querySelector(".accordion__header").textContent = t.course4Title;
-        accordionItems[3].querySelector(".accordion__content p").textContent = t.course4Desc;
-        // Special handle for English course which has different structure (subtitle)
-        accordionItems[4].querySelector(".accordion__header").textContent = t.course5Title;
-        accordionItems[4].querySelector(".accordion__content p").textContent = t.course5Desc;
-        // Language Proficiency
-        const langProf = accordionItems[4].querySelector(".accordion__content p:last-child");
-        if (langProf) langProf.textContent = t.languageProficiency;
-      }
+      const courseKeys = [
+        'course1', 'course2', 'course3', 'course4', 'course5',
+        'course6', 'course7', 'course8', 'course9', 'course10', 'course11'
+      ];
+      courseKeys.forEach((key, i) => {
+        if (accordionItems[i]) {
+          const headerSpan = accordionItems[i].querySelector(".accordion__header span");
+          if (headerSpan) headerSpan.textContent = t[key + 'Title'];
+          const bodyP = accordionItems[i].querySelector(".accordion__body p");
+          if (bodyP) bodyP.textContent = t[key + 'Desc'];
+        }
+      });
     }
-    else if (text.includes("conhecimentos") || text.includes("skills") || text.includes("tech") || text.includes("conocimientos") || text.includes("compétences") || text.includes("技术") || text.includes("तकनीकी") || text.includes("المهارات")) h.textContent = t.techSkills;
+    else if (text.includes("conhecimentos") || text.includes("skills") || text.includes("tech") || text.includes("conocimientos") || text.includes("compétences") || text.includes("技术") || text.includes("तकनीकी") || text.includes("المهارات")) {
+      h.textContent = t.techSkills;
+      // Update skill tags - translate level words and special names
+      const skillTags = document.querySelectorAll(".skill__tag");
+      skillTags.forEach(tag => {
+        let txt = tag.textContent;
+        // Replace level words
+        txt = txt.replace(/Básico|Basic|Basique|基础|बुनियादी|أساسي/g, t.skillBasic);
+        txt = txt.replace(/Intermediário|Intermediate|Intermedio|Intermédiaire|中级|मध्यवर्ती|متوسط/g, t.skillIntermediate);
+        // Replace special tool names
+        txt = txt.replace(/Pacote Office|Office Suite|Paquete Office|Suite Office|Office 套件|ऑफिस सूट|حزمة أوفيس/g, t.skillOffice);
+        txt = txt.replace(/Ferramentas de IA|AI Tools|Herramientas de IA|Outils d'IA|AI 工具|AI उपकरण|أدوات الذكاء الاصطناعي/g, t.skillAITools);
+        tag.textContent = txt;
+      });
+    }
     else if (text.includes("interesses") || text.includes("interests") || text.includes("intereses") || text.includes("intérêts") || text.includes("兴趣") || text.includes("रुचियां") || text.includes("الاهتمامات")) {
       h.textContent = t.interests;
       // Update interest items
