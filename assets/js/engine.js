@@ -851,13 +851,22 @@ languageSelect.addEventListener("change", (e) => {
   const lang = e.target.value;
   const t = translations[lang];
 
-  // Update Navigation
-  const navLinks = document.querySelectorAll(".menu__link span");
-  if (navLinks.length >= 4) {
-    navLinks[0].textContent = t.navHome;
-    navLinks[1].textContent = t.navProjects;
-    navLinks[2].textContent = t.navAbout;
-    navLinks[3].textContent = t.navContact;
+  // Update Navigation (Desktop)
+  const desktopNavLinks = document.querySelectorAll(".menu--principal .menu__text");
+  if (desktopNavLinks.length >= 4) {
+    desktopNavLinks[0].textContent = t.navHome;
+    desktopNavLinks[1].textContent = t.navProjects;
+    desktopNavLinks[2].textContent = t.navAbout;
+    desktopNavLinks[3].textContent = t.navContact;
+  }
+
+  // Update Navigation (Mobile)
+  const mobileNavLinks = document.querySelectorAll(".menu--mobile .menu__text");
+  if (mobileNavLinks.length >= 4) {
+    mobileNavLinks[0].textContent = t.navHome;
+    mobileNavLinks[1].textContent = t.navProjects;
+    mobileNavLinks[2].textContent = t.navAbout;
+    mobileNavLinks[3].textContent = t.navContact;
   }
 
   // Update content
