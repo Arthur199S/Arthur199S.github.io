@@ -354,6 +354,8 @@ p {
   border: 1px solid var(--primary-color);
 }
 
+
+
 main,
 .projects,
 .about,
@@ -490,6 +492,47 @@ main {
   border-radius: 0.5rem;
   object-fit: cover;
   object-position: center;
+}
+
+.card__gallery {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+.card__gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card__gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card__gallery::-webkit-scrollbar-thumb {
+  background: var(--secondary-border-color);
+  border-radius: 3px;
+}
+
+.card__screenshot {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  border: 2px solid var(--primary-border-color);
+  scroll-snap-align: start;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card__screenshot:hover {
+  transform: scale(1.03);
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(93, 224, 230, 0.3);
 }
 
 .card__body {
@@ -707,6 +750,12 @@ footer p {
   padding: 1rem;
 }
 
+.footer__ai {
+  font-size: .75rem;
+  opacity: 0.7;
+  padding-top: 0 !important;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
   .header {
@@ -782,6 +831,19 @@ footer p {
 
   .card__cover {
     width: 55%;
+  }
+
+  .card__gallery {
+    flex: 0 0 55%;
+    max-width: 55%;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .card__screenshot {
+    width: 30%;
+    min-width: 150px;
   }
 
   .about {

@@ -202,7 +202,7 @@ const captionText = document.getElementById("caption");
 const span = document.getElementsByClassName("close")[0];
 
 // Get all images that should be zoomable
-const zoomableImages = document.querySelectorAll(".home__avatar, .about__photo, .card__cover");
+const zoomableImages = document.querySelectorAll(".home__avatar, .about__photo, .card__cover, .card__screenshot");
 
 zoomableImages.forEach(img => {
   img.addEventListener("click", function () {
@@ -256,6 +256,7 @@ const translations = {
     contact: "Contate-me",
     contactDesc: "Estou disponível para serviços e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.",
     footerText: "© 2025. Todos os direitos reservados. Portfólio desenvolvido por",
+    footerAI: "Desenvolvido inicialmente de forma manual. IA utilizada para internacionalização, efeitos especiais e auxílio na formatação.",
     degreeName: "Engenharia da Computação",
     degreeDate: "Fev 2023 - Atualmente",
     experienceText: "Sem Experiências profissionais até o momento",
@@ -295,6 +296,16 @@ const translations = {
     projectFeature1: "Página de Login;",
     projectFeature2: "Banco do MySQL armazenando informações das contas;",
     projectFeature3: "Operações de saque.",
+    project2Title: "Calculadora Penal",
+    project2Desc: "Aplicativo Android desenvolvido em grupo para a empresa Advocacia Céspedes Lourenço, com foco em cálculos de progressão de pena de forma rápida e prática.",
+    project2Feature1: "Cálculo de pena baseado em regime, tipo de crime e remissão;",
+    project2Feature2: "Suporte multilíngue (Português, Inglês, Espanhol);",
+    project2Feature3: "Envio dos resultados por WhatsApp ou e-mail.",
+    project3Title: "Banco CVetti - Servidor",
+    project3Desc: "Projeto em grupo na disciplina de Linguagens de Programação: banco digital com arquitetura cliente-servidor usando WebSocket, desenvolvido e hospedado no GitHub Codespace.",
+    project3Feature1: "Comunicação em tempo real via WebSocket;",
+    project3Feature2: "Aplicativo cliente com interface JavaFX;",
+    project3Feature3: "Servidor hospedado no GitHub Codespace.",
     repository: "Repositório",
     acadDetail1: "Encontros semanais para aprendizado do básico da linguagem Kotlin;",
     acadDetail2: "Visita de representante da empresa para apresentação da ideia e requisitos da aplicação;",
@@ -334,6 +345,7 @@ const translations = {
     contact: "Contact Me",
     contactDesc: "I am available for services and new connections. Contact me via email and connect with me through my social networks.",
     footerText: "© 2025. All rights reserved. Portfolio developed by",
+    footerAI: "Initially developed manually. AI used for internationalization, special effects, and formatting assistance.",
     degreeName: "Computer Engineering",
     degreeDate: "Feb 2023 - Present",
     experienceText: "No professional experience yet",
@@ -373,6 +385,16 @@ const translations = {
     projectFeature1: "Login Page;",
     projectFeature2: "MySQL database storing account information;",
     projectFeature3: "Withdrawal operations.",
+    project2Title: "Criminal Sentence Calculator",
+    project2Desc: "Android app developed as a team for Advocacia Céspedes Lourenço, focused on quick and practical criminal sentence progression calculations.",
+    project2Feature1: "Sentence calculation based on regime, crime type, and remission;",
+    project2Feature2: "Multilingual support (Portuguese, English, Spanish);",
+    project2Feature3: "Send results via WhatsApp or email.",
+    project3Title: "CVetti Bank - Server",
+    project3Desc: "Group project in the Programming Languages course: digital bank with client-server architecture using WebSocket, developed and hosted on GitHub Codespace.",
+    project3Feature1: "Real-time communication via WebSocket;",
+    project3Feature2: "Client application with JavaFX interface;",
+    project3Feature3: "Server hosted on GitHub Codespace.",
     repository: "Repository",
     acadDetail1: "Weekly meetings for learning the basics of the Kotlin language;",
     acadDetail2: "Visit from company representative to present the idea and application requirements;",
@@ -411,6 +433,7 @@ const translations = {
     contact: "Contáctame",
     contactDesc: "Estoy disponible para servicios y nuevas conexiones. Contáctame vía correo electrónico y conéctate conmigo a través de mis redes sociales.",
     footerText: "© 2025. Todos los derechos reservados. Portafolio desarrollado por",
+    footerAI: "Desarrollado inicialmente de forma manual. IA utilizada para internacionalización, efectos especiales y asistencia en la formatación.",
     degreeName: "Ingeniería Informática",
     degreeDate: "Feb 2023 - Actualidad",
     experienceText: "Sin experiencia profesional por el momento",
@@ -450,6 +473,16 @@ const translations = {
     projectFeature1: "Página de Inicio de Sesión;",
     projectFeature2: "Base de datos MySQL almacenando información de las cuentas;",
     projectFeature3: "Operaciones de retiro.",
+    project2Title: "Calculadora Penal",
+    project2Desc: "Aplicación Android desarrollada en equipo para Advocacia Céspedes Lourenço, enfocada en cálculos rápidos y prácticos de progresión de pena.",
+    project2Feature1: "Cálculo de pena basado en régimen, tipo de delito y remisión;",
+    project2Feature2: "Soporte multilingüe (Portugués, Inglés, Español);",
+    project2Feature3: "Envío de resultados por WhatsApp o correo electrónico.",
+    project3Title: "Banco CVetti - Servidor",
+    project3Desc: "Proyecto en grupo en la asignatura de Lenguajes de Programación: banco digital con arquitectura cliente-servidor usando WebSocket, desarrollado y hospedado en GitHub Codespace.",
+    project3Feature1: "Comunicación en tiempo real vía WebSocket;",
+    project3Feature2: "Aplicación cliente con interfaz JavaFX;",
+    project3Feature3: "Servidor hospedado en GitHub Codespace.",
     repository: "Repositorio",
     acadDetail1: "Encuentros semanales para aprendizaje de lo básico del lenguaje Kotlin;",
     acadDetail2: "Visita del representante de la empresa para presentación de la idea y requisitos de la aplicación;",
@@ -488,6 +521,7 @@ const translations = {
     contact: "Contactez-moi",
     contactDesc: "Je suis disponible pour des services et de nouvelles connexions. Contactez-moi par e-mail et connectez-vous avec moi via mes réseaux sociaux.",
     footerText: "© 2025. Tous droits réservés. Portfolio développé par",
+    footerAI: "Développé initialement manuellement. IA utilisée pour l'internationalisation, les effets spéciaux et l'aide à la mise en forme.",
     degreeName: "Ingénierie Informatique",
     degreeDate: "Fév 2023 - Présent",
     experienceText: "Aucune expérience professionnelle pour le moment",
@@ -527,6 +561,16 @@ const translations = {
     projectFeature1: "Page de Connexion ;",
     projectFeature2: "Base de données MySQL stockant les informations des comptes ;",
     projectFeature3: "Opérations de retrait.",
+    project2Title: "Calculateur Pénal",
+    project2Desc: "Application Android développée en équipe pour Advocacia Céspedes Lourenço, axée sur des calculs rapides et pratiques de progression de peine.",
+    project2Feature1: "Calcul de peine basé sur le régime, le type de crime et la remise ;",
+    project2Feature2: "Support multilingue (Portugais, Anglais, Espagnol) ;",
+    project2Feature3: "Envoi des résultats par WhatsApp ou e-mail.",
+    project3Title: "Banque CVetti - Serveur",
+    project3Desc: "Projet de groupe dans le cours de Langages de Programmation : banque numérique avec architecture client-serveur utilisant WebSocket, développé et hébergé sur GitHub Codespace.",
+    project3Feature1: "Communication en temps réel via WebSocket ;",
+    project3Feature2: "Application cliente avec interface JavaFX ;",
+    project3Feature3: "Serveur hébergé sur GitHub Codespace.",
     repository: "Dépôt",
     acadDetail1: "Rencontres hebdomadaires pour l'apprentissage des bases du langage Kotlin ;",
     acadDetail2: "Visite du représentant de l'entreprise pour présentation de l'idée et des exigences de l'application ;",
@@ -565,6 +609,7 @@ const translations = {
     contact: "联系我",
     contactDesc: "我提供服务并欢迎新的联系。通过电子邮件联系我，并通过我的社交网络与我联系。",
     footerText: "© 2025. 版权所有。作品集由",
+    footerAI: "最初手动开发。AI用于国际化、特效和格式调整协助。",
     degreeName: "计算机工程",
     degreeDate: "2023年2月 - 至今",
     experienceText: "目前没有专业经验",
@@ -604,6 +649,16 @@ const translations = {
     projectFeature1: "登录页面；",
     projectFeature2: "MySQL数据库存储账户信息；",
     projectFeature3: "取款操作。",
+    project2Title: "刑事计算器",
+    project2Desc: "团队为Advocacia Céspedes Lourenço开发的Android应用程序，专注于快速实用的刑事判决进展计算。",
+    project2Feature1: "基于制度、犯罪类型和减刑的量刑计算；",
+    project2Feature2: "多语言支持（葡萄牙语、英语、西班牙语）；",
+    project2Feature3: "通过WhatsApp或电子邮件发送结果。",
+    project3Title: "CVetti银行 - 服务器",
+    project3Desc: "编程语言课程的小组项目：使用WebSocket的客户端-服务器架构数字银行，在GitHub Codespace上开发和托管。",
+    project3Feature1: "通过WebSocket进行实时通信；",
+    project3Feature2: "使用JavaFX界面的客户端应用程序；",
+    project3Feature3: "服务器托管在GitHub Codespace上。",
     repository: "代码仓库",
     acadDetail1: "每周学习Kotlin语言基础；",
     acadDetail2: "企业代表来访介绍项目理念和应用需求；",
@@ -642,6 +697,7 @@ const translations = {
     contact: "मुझसे संपर्क करें",
     contactDesc: "मैं सेवाओं और नए कनेक्शन के लिए उपलब्ध हूँ। मुझे ईमेल के माध्यम से संपर्क करें और मेरे सोशल नेटवर्क के माध्यम से मुझसे जुड़ें।",
     footerText: "© 2025. सर्वाधिकार सुरक्षित। आर्थर सिल्वा कोरिया द्वारा विकसित पोर्टफोलियो।",
+    footerAI: "शुरू में मैन्युअल रूप से विकसित। AI का उपयोग अंतर्राष्ट्रीयकरण, विशेष प्रभाव और फॉर्मेटिंग सहायता के लिए किया गया।",
     degreeName: "कंप्यूटर इंजीनियरिंग",
     degreeDate: "फरवरी 2023 - वर्तमान",
     experienceText: "अभी तक कोई पेशेवर अनुभव नहीं",
@@ -681,6 +737,16 @@ const translations = {
     projectFeature1: "लॉगिन पेज;",
     projectFeature2: "MySQL डेटाबेस खाता जानकारी संग्रहीत करता है;",
     projectFeature3: "निकासी संचालन।",
+    project2Title: "आपराधिक कैलकुलेटर",
+    project2Desc: "Advocacia Céspedes Lourenço के लिए टीम द्वारा विकसित Android ऐप, त्वरित और व्यावहारिक आपराधिक सजा प्रगति गणना पर केंद्रित।",
+    project2Feature1: "शासन, अपराध प्रकार और छूट के आधार पर सजा गणना;",
+    project2Feature2: "बहुभाषी समर्थन (पुर्तगाली, अंग्रेजी, स्पेनिश);",
+    project2Feature3: "WhatsApp या ईमेल के माध्यम से परिणाम भेजें।",
+    project3Title: "CVetti बैंक - सर्वर",
+    project3Desc: "प्रोग्रामिंग भाषाओं के पाठ्यक्रम में समूह परियोजना: WebSocket का उपयोग करके क्लाइंट-सर्वर आर्किटेक्चर के साथ डिजिटल बैंक, GitHub Codespace पर विकसित और होस्ट किया गया।",
+    project3Feature1: "WebSocket के माध्यम से रीयल-टाइम संचार;",
+    project3Feature2: "JavaFX इंटरफ़ेस वाला क्लाइंट ऐप;",
+    project3Feature3: "GitHub Codespace पर होस्ट किया गया सर्वर।",
     repository: "रिपॉजिटरी",
     acadDetail1: "कोटलिन भाषा की बुनियादी बातें सीखने के लिए साप्ताहिक बैठकें;",
     acadDetail2: "कंपनी प्रतिनिधि का विचार और आवेदन आवश्यकताओं की प्रस्तुति के लिए दौरा;",
@@ -719,6 +785,7 @@ const translations = {
     contact: "اتصل بي",
     contactDesc: "أنا متاح للخدمات ولإجراء اتصالات جديدة. اتصل بي عبر البريد الإلكتروني وتواصل معي عبر شبكات التواصل الاجتماعي الخاصة بي.",
     footerText: "© 2025. جميع الحقوق محفوظة. تم تطوير المحفظة بواسطة",
+    footerAI: "تم التطوير في البداية يدويًا. تم استخدام الذكاء الاصطناعي للتدويل والمؤثرات الخاصة والمساعدة في التنسيق.",
     degreeName: "هندسة الكمبيوتر",
     degreeDate: "فبراير 2023 - الآن",
     experienceText: "لا توجد خبرة مهنية حتى الآن",
@@ -758,6 +825,16 @@ const translations = {
     projectFeature1: "صفحة تسجيل الدخول؛",
     projectFeature2: "قاعدة بيانات MySQL تخزن معلومات الحسابات؛",
     projectFeature3: "عمليات السحب.",
+    project2Title: "حاسبة الأحكام الجنائية",
+    project2Desc: "تطبيق أندرويد تم تطويره كفريق لـ Advocacia Céspedes Lourenço، يركز على حسابات سريعة وعملية لتقدم الأحكام الجنائية.",
+    project2Feature1: "حساب العقوبة بناءً على النظام ونوع الجريمة والإعفاء؛",
+    project2Feature2: "دعم متعدد اللغات (البرتغالية، الإنجليزية، الإسبانية)؛",
+    project2Feature3: "إرسال النتائج عبر واتساب أو البريد الإلكتروني.",
+    project3Title: "بنك CVetti - السيرفر",
+    project3Desc: "مشروع جماعي في مادة لغات البرمجة: بنك رقمي بهندسة خادم-عميل باستخدام WebSocket، تم تطويره واستضافته على GitHub Codespace.",
+    project3Feature1: "اتصال في الوقت الحقيقي عبر WebSocket؛",
+    project3Feature2: "تطبيق عميل بواجهة JavaFX؛",
+    project3Feature3: "خادم مستضاف على GitHub Codespace.",
     repository: "المستودع",
     acadDetail1: "لقاءات أسبوعية لتعلم أساسيات لغة Kotlin؛",
     acadDetail2: "زيارة ممثل الشركة لعرض الفكرة ومتطلبات التطبيق؛",
@@ -817,9 +894,37 @@ languageSelect.addEventListener("change", (e) => {
     cardItems[2].textContent = t.projectFeature3;
   }
 
-  // Repository button
-  const repoBtn = document.querySelector(".card__buttons .btn span");
-  if (repoBtn) repoBtn.textContent = t.repository;
+  // Repository buttons (all cards)
+  const repoBtns = document.querySelectorAll(".card__buttons .btn--primary span");
+  repoBtns.forEach(btn => btn.textContent = t.repository);
+
+  // Calculadora Penal project card
+  const calcTitle = document.querySelector(".card__title--calc");
+  if (calcTitle) calcTitle.textContent = t.project2Title;
+
+  const calcDesc = document.querySelector(".card__description--calc");
+  if (calcDesc) calcDesc.textContent = t.project2Desc;
+
+  const calcItems = document.querySelectorAll(".card__item--calc1, .card__item--calc2, .card__item--calc3");
+  if (calcItems.length >= 3) {
+    calcItems[0].textContent = t.project2Feature1;
+    calcItems[1].textContent = t.project2Feature2;
+    calcItems[2].textContent = t.project2Feature3;
+  }
+
+  // Banco CVetti project card
+  const bankTitle = document.querySelector(".card__title--bank");
+  if (bankTitle) bankTitle.textContent = t.project3Title;
+
+  const bankDesc = document.querySelector(".card__description--bank");
+  if (bankDesc) bankDesc.textContent = t.project3Desc;
+
+  const bankItems = document.querySelectorAll(".card__item--bank1, .card__item--bank2, .card__item--bank3");
+  if (bankItems.length >= 3) {
+    bankItems[0].textContent = t.project3Feature1;
+    bankItems[1].textContent = t.project3Feature2;
+    bankItems[2].textContent = t.project3Feature3;
+  }
 
   // About Section
   const aboutMeTitle = document.querySelector("#sobre h2");
@@ -951,4 +1056,8 @@ languageSelect.addEventListener("change", (e) => {
     // Preserve the link
     footerP.childNodes[0].textContent = t.footerText + " ";
   }
+
+  // Footer AI note
+  const footerAI = document.querySelector(".footer__ai");
+  if (footerAI) footerAI.textContent = t.footerAI;
 });
