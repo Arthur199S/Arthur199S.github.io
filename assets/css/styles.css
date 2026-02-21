@@ -1196,7 +1196,7 @@ footer p {
 }
 
 html[data-theme='light'] .ascii-art__container {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(220, 240, 245, 0.7);
   border: 1px solid rgba(0, 74, 173, 0.25);
   box-shadow:
     0 0 20px rgba(0, 74, 173, 0.08),
@@ -1214,19 +1214,26 @@ html[data-theme='light'] .ascii-art__container:hover {
 
 html[data-theme='light'] .ascii-art__content {
   color: #001a3a;
-  background: linear-gradient(180deg,
-      #001a3a 0%,
-      #003366 15%,
-      #004aad 30%,
-      #0066cc 50%,
-      #004aad 70%,
-      #003366 85%,
-      #001a3a 100%);
-  background-size: 100% 400%;
+  background: linear-gradient(135deg,
+      #c2185b 0%,
+      #d500f9 8%,
+      #aa00ff 16%,
+      #6200ea 24%,
+      #304ffe 32%,
+      #0091ea 40%,
+      #00897b 48%,
+      #2e7d32 56%,
+      #f9a825 64%,
+      #e65100 72%,
+      #c62828 80%,
+      #c2185b 88%,
+      #d500f9 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 3px rgba(0, 74, 173, 0.4)) drop-shadow(0 0 6px rgba(0, 74, 173, 0.2));
+  animation: asciiGradient 10s linear infinite;
+  filter: drop-shadow(0 0 3px rgba(98, 0, 234, 0.4)) drop-shadow(0 0 6px rgba(197, 17, 98, 0.3));
 }
 
 .ascii-art__container:hover {
@@ -1257,8 +1264,8 @@ html[data-theme='light'] .ascii-art__content {
 
 .ascii-art__content {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.5rem;
-  line-height: 1.05;
+  font-size: 0.35rem;
+  line-height: 1;
   letter-spacing: 0;
   white-space: pre;
   margin: 0 auto;
@@ -1266,35 +1273,49 @@ html[data-theme='light'] .ascii-art__content {
   text-align: center;
   display: inline-block;
   color: #ffffff;
-  background: linear-gradient(180deg,
-      #ffffff 0%,
-      #e0f7ff 15%,
-      #5de0e6 30%,
-      #1cb5e0 50%,
-      #5de0e6 70%,
-      #e0f7ff 85%,
-      #ffffff 100%);
-  background-size: 100% 400%;
+  background: linear-gradient(135deg,
+      #ff6ec7 0%,
+      #ff3cac 8%,
+      #e040fb 16%,
+      #7c4dff 24%,
+      #448aff 32%,
+      #00e5ff 40%,
+      #1de9b6 48%,
+      #76ff03 56%,
+      #ffea00 64%,
+      #ff9100 72%,
+      #ff3d00 80%,
+      #ff6ec7 88%,
+      #e040fb 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: asciiGradient 6s ease infinite;
-  filter: drop-shadow(0 0 4px rgba(28, 181, 224, 0.6)) drop-shadow(0 0 8px rgba(28, 181, 224, 0.3));
+  animation: asciiGradient 10s linear infinite;
+  filter: drop-shadow(0 0 5px rgba(28, 181, 224, 0.7)) drop-shadow(0 0 10px rgba(224, 64, 251, 0.4));
   user-select: none;
   text-shadow: none;
 }
 
 @keyframes asciiGradient {
   0% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 100%;
   }
 
   50% {
-    background-position: 0% 100%;
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 0%;
   }
 
   100% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
 }
 
@@ -1309,8 +1330,8 @@ html[data-theme='light'] .ascii-art__content {
   }
 
   .ascii-art__content {
-    font-size: 0.65rem;
-    line-height: 1.1;
+    font-size: 0.45rem;
+    line-height: 1.05;
   }
 }
 
@@ -1320,8 +1341,8 @@ html[data-theme='light'] .ascii-art__content {
   }
 
   .ascii-art__content {
-    font-size: 0.8rem;
-    line-height: 1.15;
+    font-size: 0.55rem;
+    line-height: 1.1;
   }
 }
 
@@ -1331,7 +1352,7 @@ html[data-theme='light'] .ascii-art__content {
   }
 
   .ascii-art__content {
-    font-size: 0.95rem;
-    line-height: 1.2;
+    font-size: 0.65rem;
+    line-height: 1.1;
   }
 }
