@@ -342,8 +342,13 @@ const translations = {
     acadDetail4: "Entrega final: apresentação do aplicativo concluído para a empresa parceira.",
     skillBasic: "Básico",
     skillIntermediate: "Intermediário",
+    skillAdvanced: "Avançado",
     skillOffice: "Pacote Office",
-    skillAITools: "Ferramentas de IA"
+    skillAITools: "Ferramentas de IA",
+    skillDatabase: "Banco de Dados",
+    skillTools: "Ferramentas",
+    skillData: "Dados",
+    skillOthers: "Outros"
   },
 
   en: {
@@ -443,8 +448,13 @@ const translations = {
     acadDetail4: "Final delivery: presentation of the completed app to the partner company.",
     skillBasic: "Basic",
     skillIntermediate: "Intermediate",
+    skillAdvanced: "Advanced",
     skillOffice: "Office Suite",
-    skillAITools: "AI Tools"
+    skillAITools: "AI Tools",
+    skillDatabase: "Database",
+    skillTools: "Tools",
+    skillData: "Data",
+    skillOthers: "Others"
   },
   es: {
     welcome: "<b>Bienvenido</b> a mi Portafolio!",
@@ -543,8 +553,13 @@ const translations = {
     acadDetail4: "Entrega final: presentación de la aplicación terminada a la empresa socia.",
     skillBasic: "Básico",
     skillIntermediate: "Intermedio",
+    skillAdvanced: "Avanzado",
     skillOffice: "Paquete Office",
-    skillAITools: "Herramientas de IA"
+    skillAITools: "Herramientas de IA",
+    skillDatabase: "Base de Datos",
+    skillTools: "Herramientas",
+    skillData: "Datos",
+    skillOthers: "Otros"
   },
   fr: {
     welcome: "<b>Bienvenue</b> sur mon Portfolio !",
@@ -643,8 +658,13 @@ const translations = {
     acadDetail4: "Livraison finale : présentation de l'application terminée à l'entreprise partenaire.",
     skillBasic: "Basique",
     skillIntermediate: "Intermédiaire",
+    skillAdvanced: "Avancé",
     skillOffice: "Suite Office",
-    skillAITools: "Outils d'IA"
+    skillAITools: "Outils d'IA",
+    skillDatabase: "Base de Données",
+    skillTools: "Outils",
+    skillData: "Données",
+    skillOthers: "Autres"
   },
   zh: {
     welcome: "<b>欢迎</b>来到我的作品集！",
@@ -743,8 +763,13 @@ const translations = {
     acadDetail4: "最终交付：向合作企业展示完成的应用程序。",
     skillBasic: "基础",
     skillIntermediate: "中级",
+    skillAdvanced: "高级",
     skillOffice: "Office 套件",
-    skillAITools: "AI 工具"
+    skillAITools: "AI 工具",
+    skillDatabase: "数据库",
+    skillTools: "工具",
+    skillData: "数据",
+    skillOthers: "其他"
   },
   hi: {
     welcome: "<b>स्वागत है</b> मेरे पोर्टफोलियो में!",
@@ -843,8 +868,13 @@ const translations = {
     acadDetail4: "अंतिम डिलीवरी: साझेदार कंपनी को पूर्ण ऐप की प्रस्तुति।",
     skillBasic: "बुनियादी",
     skillIntermediate: "मध्यवर्ती",
+    skillAdvanced: "उन्नत",
     skillOffice: "ऑफिस सूट",
-    skillAITools: "AI उपकरण"
+    skillAITools: "AI उपकरण",
+    skillDatabase: "डेटाबेस",
+    skillTools: "उपकरण",
+    skillData: "डेटा",
+    skillOthers: "अन्य"
   },
   ar: {
     welcome: "<b>أهلاً بك</b> في محفظتي!",
@@ -943,8 +973,13 @@ const translations = {
     acadDetail4: "التسليم النهائي: تقديم التطبيق المكتمل للشركة الشريكة.",
     skillBasic: "أساسي",
     skillIntermediate: "متوسط",
+    skillAdvanced: "متقدم",
     skillOffice: "حزمة أوفيس",
-    skillAITools: "أدوات الذكاء الاصطناعي"
+    skillAITools: "أدوات الذكاء الاصطناعي",
+    skillDatabase: "قاعدة البيانات",
+    skillTools: "أدوات",
+    skillData: "بيانات",
+    skillOthers: "أخرى"
   }
 };
 
@@ -1130,9 +1165,23 @@ languageSelect.addEventListener("change", (e) => {
         // Replace level words
         txt = txt.replace(/Básico|Basic|Basique|基础|बुनियादी|أساسي/g, t.skillBasic);
         txt = txt.replace(/Intermediário|Intermediate|Intermedio|Intermédiaire|中级|मध्यवर्ती|متوسط/g, t.skillIntermediate);
+        txt = txt.replace(/Avançado|Advanced|Avanzado|Avancé|高级|उन्नत|متقدم/g, t.skillAdvanced);
         // Replace special tool names
         txt = txt.replace(/Pacote Office|Office Suite|Paquete Office|Suite Office|Office 套件|ऑफिस सूट|حزمة أوفيس/g, t.skillOffice);
         txt = txt.replace(/Ferramentas de IA|AI Tools|Herramientas de IA|Outils d'IA|AI 工具|AI उपकरण|أدوات الذكاء الاصطناعي/g, t.skillAITools);
+
+        // Replace Categories at the start of tags
+        txt = txt.replace(/^(Banco de Dados|Database|Base de Datos|Base de Données|数据库|डेटाबेस|قاعدة البيانات):/, t.skillDatabase + ":");
+        txt = txt.replace(/^(Ferramentas|Tools|Herramientas|Outils|工具|उपकरण|أدوات):/, t.skillTools + ":");
+        txt = txt.replace(/^(Dados|Data|Datos|Données|数据|डेटा|بيانات):/, t.skillData + ":");
+        txt = txt.replace(/^(Outros|Others|Otros|Autres|其他|अन्य|أخرى):/, t.skillOthers + ":");
+
+        if (t.skillAITools && !t.skillAITools.toLowerCase().includes("ia")) {
+          txt = txt.replace(/\bIA \(/g, "AI (");
+        } else {
+          txt = txt.replace(/\bAI \(/g, "IA (");
+        }
+
         tag.textContent = txt;
       });
     }
