@@ -195,32 +195,49 @@ function animate() {
 init();
 animate();
 
-// Image Modal Logic
+// Image & PDF Modal Logic
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("img01");
+const modalPdf = document.getElementById("pdf01");
 const captionText = document.getElementById("caption");
 const span = document.getElementsByClassName("close")[0];
 
 // Get all images that should be zoomable
-const zoomableImages = document.querySelectorAll(".home__avatar, .about__photo, .card__cover, .card__screenshot");
+const zoomableImages = document.querySelectorAll(".home__avatar, .about__photo, .card__cover, .card__screenshot, .certificate__img");
 
 zoomableImages.forEach(img => {
   img.addEventListener("click", function () {
     modal.style.display = "block";
+    modalImg.style.display = "block";
+    modalPdf.style.display = "none";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   });
 });
 
+// PDF certificate click handler
+const pdfCertificates = document.querySelectorAll("[data-pdf]");
+pdfCertificates.forEach(el => {
+  el.addEventListener("click", function () {
+    modal.style.display = "block";
+    modalImg.style.display = "none";
+    modalPdf.style.display = "block";
+    modalPdf.src = this.getAttribute("data-pdf");
+    captionText.innerHTML = this.getAttribute("data-title") || "";
+  });
+});
+
 // Close modal when clicking the X
-span.onclick = function () { // Modified to add proper event binding
+span.onclick = function () {
   modal.style.display = "none";
+  modalPdf.src = "";
 }
 
-// Close modal when clicking outside the image
+// Close modal when clicking outside the content
 modal.onclick = function (event) {
   if (event.target === modal) {
     modal.style.display = "none";
+    modalPdf.src = "";
   }
 }
 
@@ -258,7 +275,7 @@ const translations = {
     footerText: "© 2025. Todos os direitos reservados. Portfólio desenvolvido por",
     footerAI: "Desenvolvido inicialmente de forma manual. IA utilizada para internacionalização, efeitos especiais e auxílio na formatação.",
     degreeName: "Engenharia da Computação",
-    degreeDate: "Fev 2023 - Atualmente",
+    degreeDate: "Fev 2023 - Dez 2027",
     experienceText: "Sem Experiências profissionais até o momento",
     acadProjectTitle: "Desenvolvimento de Aplicativos com a Linguagem Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
@@ -284,8 +301,20 @@ const translations = {
     course10Title: "Construção de Gráficos e Análise de Dados em Excel",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
     course11Title: "Inglês",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "Inglês: Avançado | Português Brasileiro: Nativo",
+    course11Desc: "Cultura Inglesa | 2022 – Atualmente",
+    course12Title: "Introdução ao Hacking e Pentest 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "Ver Certificado",
+    currentlyTaking: "Cursando",
+    course13Title: "Aerografia",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course14Title: "Planejamento Financeiro Pessoal",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course15Title: "Calouros",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    languageProficiency: "Inglês: Intermediário/Avançado | Português Brasileiro: Nativo",
     interestPC: "Montagem e manutenção de computadores",
     interestML: "Aprendizado de máquina",
     interestCloud: "Estudo de cloud computing (AWS, Azure)",
@@ -347,7 +376,7 @@ const translations = {
     footerText: "© 2025. All rights reserved. Portfolio developed by",
     footerAI: "Initially developed manually. AI used for internationalization, special effects, and formatting assistance.",
     degreeName: "Computer Engineering",
-    degreeDate: "Feb 2023 - Present",
+    degreeDate: "Feb 2023 - Dec 2027",
     experienceText: "No professional experience yet",
     acadProjectTitle: "App Development with Kotlin",
     acadProjectDate: "Aug 2025 - Nov 2025",
@@ -373,8 +402,20 @@ const translations = {
     course10Title: "Graph Construction and Data Analysis in Excel",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
     course11Title: "English",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "English: Advanced | Portuguese: Native",
+    course11Desc: "Cultura Inglesa | 2022 – Present",
+    course12Title: "Introduction to Hacking and Pentest 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "View Certificate",
+    currentlyTaking: "In Progress",
+    course13Title: "Airbrush Art",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 hours",
+    course14Title: "Personal Financial Planning",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 hours",
+    course15Title: "Freshmen",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
+    languageProficiency: "English: Intermediate/Advanced | Portuguese: Native",
     interestPC: "Computer Assembly and Maintenance",
     interestML: "Machine Learning",
     interestCloud: "Cloud Computing Study (AWS, Azure)",
@@ -435,7 +476,7 @@ const translations = {
     footerText: "© 2025. Todos los derechos reservados. Portafolio desarrollado por",
     footerAI: "Desarrollado inicialmente de forma manual. IA utilizada para internacionalización, efectos especiales y asistencia en la formatación.",
     degreeName: "Ingeniería Informática",
-    degreeDate: "Feb 2023 - Actualidad",
+    degreeDate: "Feb 2023 - Dic 2027",
     experienceText: "Sin experiencia profesional por el momento",
     acadProjectTitle: "Desarrollo de Aplicaciones con Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
@@ -461,8 +502,20 @@ const translations = {
     course10Title: "Construcción de Gráficos y Análisis de Datos en Excel",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
     course11Title: "Inglés",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "Inglés: Avanzado | Portugués: Nativo",
+    course11Desc: "Cultura Inglesa | 2022 – Actualmente",
+    course12Title: "Introducción al Hacking y Pentest 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "Ver Certificado",
+    currentlyTaking: "En Curso",
+    course13Title: "Aerografía",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course14Title: "Planificación Financiera Personal",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 horas",
+    course15Title: "Novatos",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    languageProficiency: "Inglés: Intermedio/Avanzado | Portugués: Nativo",
     interestPC: "Montaje y Mantenimiento de Computadoras",
     interestML: "Aprendizaje Automático",
     interestCloud: "Estudio de Cloud Computing (AWS, Azure)",
@@ -523,7 +576,7 @@ const translations = {
     footerText: "© 2025. Tous droits réservés. Portfolio développé par",
     footerAI: "Développé initialement manuellement. IA utilisée pour l'internationalisation, les effets spéciaux et l'aide à la mise en forme.",
     degreeName: "Ingénierie Informatique",
-    degreeDate: "Fév 2023 - Présent",
+    degreeDate: "Fév 2023 - Déc 2027",
     experienceText: "Aucune expérience professionnelle pour le moment",
     acadProjectTitle: "Développement d'App avec Kotlin",
     acadProjectDate: "Août 2025 - Nov 2025",
@@ -549,8 +602,20 @@ const translations = {
     course10Title: "Construction de Graphiques et Analyse de Données sur Excel",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
     course11Title: "Anglais",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "Anglais : Avancé | Portugais : Natif",
+    course11Desc: "Cultura Inglesa | 2022 – Actuellement",
+    course12Title: "Introduction au Hacking et Pentest 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "Voir le Certificat",
+    currentlyTaking: "En Cours",
+    course13Title: "Aérographie",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 heures",
+    course14Title: "Planification Financière Personnelle",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 heures",
+    course15Title: "Nouveaux Étudiants",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
+    languageProficiency: "Anglais : Intermédiaire/Avancé | Portugais : Natif",
     interestPC: "Assemblage et Maintenance d'Ordinateurs",
     interestML: "Apprentissage Automatique",
     interestCloud: "Étude du Cloud Computing (AWS, Azure)",
@@ -611,7 +676,7 @@ const translations = {
     footerText: "© 2025. 版权所有。作品集由",
     footerAI: "最初手动开发。AI用于国际化、特效和格式调整协助。",
     degreeName: "计算机工程",
-    degreeDate: "2023年2月 - 至今",
+    degreeDate: "2023年2月 - 2027年12月",
     experienceText: "目前没有专业经验",
     acadProjectTitle: "使用Kotlin开发应用程序",
     acadProjectDate: "2025年8月 - 2025年11月",
@@ -637,8 +702,20 @@ const translations = {
     course10Title: "Excel中的图表构建和数据分析",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
     course11Title: "英语",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "英语：高级 | 葡萄牙语：母语",
+    course11Desc: "Cultura Inglesa | 2022 – 目前",
+    course12Title: "黑客与渗透测试入门 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "查看证书",
+    currentlyTaking: "在读",
+    course13Title: "喷绘艺术",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 小时",
+    course14Title: "个人财务规划",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 小时",
+    course15Title: "新生课程",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
+    languageProficiency: "英语：中级/高级 | 葡萄牙语：母语",
     interestPC: "电脑组装与维护",
     interestML: "机器学习",
     interestCloud: "云计算学习 (AWS, Azure)",
@@ -699,7 +776,7 @@ const translations = {
     footerText: "© 2025. सर्वाधिकार सुरक्षित। आर्थर सिल्वा कोरिया द्वारा विकसित पोर्टफोलियो।",
     footerAI: "शुरू में मैन्युअल रूप से विकसित। AI का उपयोग अंतर्राष्ट्रीयकरण, विशेष प्रभाव और फॉर्मेटिंग सहायता के लिए किया गया।",
     degreeName: "कंप्यूटर इंजीनियरिंग",
-    degreeDate: "फरवरी 2023 - वर्तमान",
+    degreeDate: "फरवरी 2023 - दिसंबर 2027",
     experienceText: "अभी तक कोई पेशेवर अनुभव नहीं",
     acadProjectTitle: "कोटलिन के साथ ऐप विकास",
     acadProjectDate: "अगस्त 2025 - नवंबर 2025",
@@ -725,8 +802,20 @@ const translations = {
     course10Title: "एक्सेल में ग्राफ निर्माण और डेटा विश्लेषण",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
     course11Title: "अंग्रेज़ी",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "अंग्रेजी: उन्नत | पुर्तगाली: मूल निवासी",
+    course11Desc: "Cultura Inglesa | 2022 – वर्तमान",
+    course12Title: "हैकिंग और पेंटेस्ट 2.0 का परिचय",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "प्रमाणपत्र देखें",
+    currentlyTaking: "जारी",
+    course13Title: "एयरब्रश कला",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 घंटे",
+    course14Title: "व्यक्तिगत वित्तीय योजना",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 घंटे",
+    course15Title: "नवागंतुक",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
+    languageProficiency: "अंग्रेजी: इंटरमीडिएट/एडवांस्ड | पुर्तगाली: मूल निवासी",
     interestPC: "कंप्यूटर असेंबली और रखरखाव",
     interestML: "मशीन लर्निंग",
     interestCloud: "क्लाउड कंप्यूटिंग अध्ययन (AWS, Azure)",
@@ -787,7 +876,7 @@ const translations = {
     footerText: "© 2025. جميع الحقوق محفوظة. تم تطوير المحفظة بواسطة",
     footerAI: "تم التطوير في البداية يدويًا. تم استخدام الذكاء الاصطناعي للتدويل والمؤثرات الخاصة والمساعدة في التنسيق.",
     degreeName: "هندسة الكمبيوتر",
-    degreeDate: "فبراير 2023 - الآن",
+    degreeDate: "فبراير 2023 - ديسمبر 2027",
     experienceText: "لا توجد خبرة مهنية حتى الآن",
     acadProjectTitle: "تطوير التطبيقات باستخدام Kotlin",
     acadProjectDate: "أغسطس 2025 - نوفمبر 2025",
@@ -813,8 +902,20 @@ const translations = {
     course10Title: "بناء الرسوم البيانية وتحليل البيانات في Excel",
     course10Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
     course11Title: "الإنجليزية",
-    course11Desc: "Cultura Inglesa | 2022 – 2025",
-    languageProficiency: "الإنكليزية: متقدم | البرتغالية: أصلي",
+    course11Desc: "Cultura Inglesa | 2022 – حالياً",
+    course12Title: "مقدمة في الاختراق واختبار الاختراق 2.0",
+    course12Desc: "Solyd Offensive Security | 2025",
+    viewCertificate: "عرض الشهادة",
+    currentlyTaking: "قيد الدراسة",
+    course13Title: "فن الرش",
+    course13Desc: "Instituto Mauá de Tecnologia | 2024 – 40 ساعة",
+    course14Title: "التخطيط المالي الشخصي",
+    course14Desc: "Instituto Mauá de Tecnologia | 2024 – 40 ساعة",
+    course15Title: "الطلاب الجدد",
+    course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
+    course16Title: "GeoGebra",
+    course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
+    languageProficiency: "الإنكليزية: متوسط/متقدم | البرتغالية: أصلي",
     interestPC: "تجميع وصيانة الكمبيوتر",
     interestML: "التعلم الآلي",
     interestCloud: "دراسة الحوسبة السحابية (AWS, Azure)",
@@ -998,18 +1099,25 @@ languageSelect.addEventListener("change", (e) => {
     }
     else if (text.includes("cursos") || text.includes("courses") || text.includes("cours") || text.includes("课程") || text.includes("पाठ्यक्रम") || text.includes("الدورات")) {
       h.textContent = t.courses;
-      // Courses are in accordion items - update all 11
+      // Courses are in accordion items - update all 16
       const accordionItems = document.querySelectorAll(".accordion__item");
       const courseKeys = [
-        'course1', 'course2', 'course3', 'course4', 'course5',
-        'course6', 'course7', 'course8', 'course9', 'course10', 'course11'
+        'course11',
+        'course1', 'course2', 'course3', 'course4', 'course5', 'course6', 'course12',
+        'course7', 'course8', 'course13', 'course14',
+        'course9', 'course10', 'course15', 'course16'
       ];
+      // Update year labels
+      const yearLabels = document.querySelectorAll(".accordion__year");
+      if (yearLabels[0] && t.currentlyTaking) yearLabels[0].textContent = t.currentlyTaking;
       courseKeys.forEach((key, i) => {
         if (accordionItems[i]) {
           const headerSpan = accordionItems[i].querySelector(".accordion__header span");
           if (headerSpan) headerSpan.textContent = t[key + 'Title'];
           const bodyP = accordionItems[i].querySelector(".accordion__body p");
           if (bodyP) bodyP.textContent = t[key + 'Desc'];
+          const certLink = accordionItems[i].querySelector(".certificate__link span");
+          if (certLink && t.viewCertificate) certLink.textContent = t.viewCertificate;
         }
       });
     }

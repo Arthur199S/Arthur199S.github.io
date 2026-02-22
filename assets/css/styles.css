@@ -684,6 +684,18 @@ main {
   border-radius: 0;
 }
 
+.accordion__header.start.end {
+  border-radius: 0.25rem;
+}
+
+.accordion__item.active .accordion__header.start.end {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.accordion__item.active .accordion__body.start.end {
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
 .accordion__body {
   display: none;
   padding: 1.25rem;
@@ -705,6 +717,84 @@ main {
   transform: rotate(180deg);
 }
 
+.accordion__year {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  margin: 1rem 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--title-color);
+  background: var(--secondary-bg-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 2rem;
+}
+
+.accordion__year:first-child {
+  margin-top: 0;
+}
+
+.certificate__container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.certificate__icon {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.certificate__img {
+  width: 120px;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary-border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificate__img:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(93, 224, 230, 0.3);
+}
+
+.certificate__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.certificate__link:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(93, 224, 230, 0.3);
+}
+
+.certificate__link i {
+  font-size: 1rem;
+}
+
+.certificate__link span {
+  font-size: 0.85rem !important;
+  text-transform: none;
+}
+
 .courses__list {
   display: flex;
   flex-direction: column;
@@ -716,6 +806,14 @@ main {
 .courses__list p {
   font-size: 0.95rem;
   text-align: left;
+}
+
+.course__description {
+  font-size: 0.85rem !important;
+  opacity: 0.85;
+  line-height: 1.4;
+  text-align: justify;
+  margin-top: 0.25rem;
 }
 
 .contact {
@@ -1097,6 +1195,15 @@ footer p {
   animation-duration: 0.6s;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-pdf {
+  display: none;
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
+  border: none;
+  background: #fff;
 }
 
 #caption {
