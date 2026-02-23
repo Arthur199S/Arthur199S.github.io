@@ -203,7 +203,7 @@ const captionText = document.getElementById("caption");
 const span = document.getElementsByClassName("close")[0];
 
 // Get all images that should be zoomable
-const zoomableImages = document.querySelectorAll(".home__avatar, .about__photo, .card__cover, .card__screenshot, .certificate__img");
+const zoomableImages = document.querySelectorAll(".brand__logo, .home__avatar, .about__photo, .card__cover, .card__screenshot, .certificate__img");
 
 zoomableImages.forEach(img => {
   img.addEventListener("click", function () {
@@ -314,6 +314,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course17Title: "Imersão Dev Agentes de IA",
+    course17Desc: "Alura & Google | 2025 – 4 horas",
     languageProficiency: "Inglês: Intermediário/Avançado | Português Brasileiro: Nativo",
     interestPC: "Montagem e manutenção de computadores",
     interestML: "Aprendizado de máquina",
@@ -420,6 +422,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 hours",
+    course17Title: "AI Agents Dev Immersion",
+    course17Desc: "Alura & Google | 2025 – 4 hours",
     languageProficiency: "English: Intermediate/Advanced | Portuguese: Native",
     interestPC: "Computer Assembly and Maintenance",
     interestML: "Machine Learning",
@@ -525,6 +529,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 horas",
+    course17Title: "Inmersión Dev Agentes de IA",
+    course17Desc: "Alura & Google | 2025 – 4 horas",
     languageProficiency: "Inglés: Intermedio/Avanzado | Portugués: Nativo",
     interestPC: "Montaje y Mantenimiento de Computadoras",
     interestML: "Aprendizaje Automático",
@@ -630,6 +636,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 heures",
+    course17Title: "Immersion Dev Agents d'IA",
+    course17Desc: "Alura & Google | 2025 – 4 heures",
     languageProficiency: "Anglais : Intermédiaire/Avancé | Portugais : Natif",
     interestPC: "Assemblage et Maintenance d'Ordinateurs",
     interestML: "Apprentissage Automatique",
@@ -735,6 +743,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 小时",
+    course17Title: "人工智能代理开发沉浸式课程",
+    course17Desc: "Alura & Google | 2025 – 4 小时",
     languageProficiency: "英语：中级/高级 | 葡萄牙语：母语",
     interestPC: "电脑组装与维护",
     interestML: "机器学习",
@@ -840,6 +850,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 घंटे",
+    course17Title: "AI एजेंट्स देव इमर्शन",
+    course17Desc: "Alura & Google | 2025 – 4 घंटे",
     languageProficiency: "अंग्रेजी: इंटरमीडिएट/एडवांस्ड | पुर्तगाली: मूल निवासी",
     interestPC: "कंप्यूटर असेंबली और रखरखाव",
     interestML: "मशीन लर्निंग",
@@ -945,6 +957,8 @@ const translations = {
     course15Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
     course16Title: "GeoGebra",
     course16Desc: "Instituto Mauá de Tecnologia | 2023 – 40 ساعة",
+    course17Title: "الغمر في تطوير وكلاء الذكاء الاصطناعي",
+    course17Desc: "Alura & Google | 2025 – 4 ساعة",
     languageProficiency: "الإنكليزية: متوسط/متقدم | البرتغالية: أصلي",
     interestPC: "تجميع وصيانة الكمبيوتر",
     interestML: "التعلم الآلي",
@@ -1134,11 +1148,11 @@ languageSelect.addEventListener("change", (e) => {
     }
     else if (text.includes("cursos") || text.includes("courses") || text.includes("cours") || text.includes("课程") || text.includes("पाठ्यक्रम") || text.includes("الدورات")) {
       h.textContent = t.courses;
-      // Courses are in accordion items - update all 16
+      // Courses are in accordion items - update all 17
       const accordionItems = document.querySelectorAll(".accordion__item");
       const courseKeys = [
         'course11',
-        'course1', 'course2', 'course3', 'course4', 'course5', 'course6', 'course12',
+        'course17', 'course1', 'course2', 'course3', 'course4', 'course5', 'course6', 'course12',
         'course7', 'course8', 'course13', 'course14',
         'course9', 'course10', 'course15', 'course16'
       ];
