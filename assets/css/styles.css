@@ -644,6 +644,51 @@ main {
   gap: .5rem;
 }
 
+.experience__preview {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--secondary-border-color);
+  background: var(--secondary-bg-color);
+}
+
+.experience__preview iframe {
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  border: none;
+  pointer-events: none;
+}
+
+.preview__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.experience__preview:hover .preview__overlay,
+.preview__overlay:focus {
+  opacity: 1;
+}
+
 .accordion__header {
   width: 100%;
   display: flex;

@@ -283,6 +283,7 @@ const translations = {
     expDetail2: "Desenvolvi e atualizei o site institucional na plataforma WIX, utilizando HTML e CSS para melhorias visuais e funcionais.",
     expDetail3: "Implementei melhorias e novos recursos com uso de Excel e Power BI, otimizando organização e análise de dados.",
     expDetail4: "Apoiei projetos tecnológicos internos, incluindo prototipagem de novos produtos e soluções digitais.",
+    accessSite: "Acessar o Site",
     acadProjectTitle: "Desenvolvimento de Aplicativos com a Linguagem Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
     acadProjectDesc: "Desenvolvimento em grupo de um aplicativo Android, solicitado pela empresa parceira, Advocacia Céspedes Lourenço, com foco em uma calculadora penal.",
@@ -397,6 +398,7 @@ const translations = {
     expDetail2: "Developed and updated the institutional website on the WIX platform, using HTML and CSS for visual and functional improvements.",
     expDetail3: "Implemented improvements and new features using Excel and Power BI, optimizing data organization and analysis.",
     expDetail4: "Supported internal technological projects, including prototyping of new products and digital solutions.",
+    accessSite: "Access Site",
     acadProjectTitle: "App Development with Kotlin",
     acadProjectDate: "Aug 2025 - Nov 2025",
     acadProjectDesc: "Group development of an Android app, requested by partner company Advocacia Céspedes Lourenço, focused on a criminal sentence calculator.",
@@ -510,6 +512,7 @@ const translations = {
     expDetail2: "Desarrollé y actualicé el sitio web institucional en la plataforma WIX, utilizando HTML y CSS para mejoras visuales y funcionales.",
     expDetail3: "Implementé mejoras y nuevas funcionalidades usando Excel y Power BI, optimizando la organización y análisis de datos.",
     expDetail4: "Apoyé proyectos tecnológicos internos, incluyendo el prototipado de nuevos productos y soluciones digitales.",
+    accessSite: "Acceder al Sitio",
     acadProjectTitle: "Desarrollo de Aplicaciones con Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
     acadProjectDesc: "Desarrollo en grupo de una aplicación Android, solicitada por la empresa socia Advocacia Céspedes Lourenço, enfocada en una calculadora penal.",
@@ -623,6 +626,7 @@ const translations = {
     expDetail2: "J'ai développé et mis à jour le site web institutionnel sur la plateforme WIX, en utilisant HTML et CSS pour des améliorations visuelles et fonctionnelles.",
     expDetail3: "J'ai mis en œuvre des améliorations et de nouvelles fonctionnalités à l'aide d'Excel et de Power BI, en optimisant l'organisation et l'analyse des données.",
     expDetail4: "J'ai soutenu des projets technologiques internes, y compris le prototypage de nouveaux produits et de solutions numériques.",
+    accessSite: "Accéder au Site",
     acadProjectTitle: "Développement d'App avec Kotlin",
     acadProjectDate: "Août 2025 - Nov 2025",
     acadProjectDesc: "Développement en groupe d'une application Android, demandée par l'entreprise partenaire Advocacia Céspedes Lourenço, axée sur un calculateur de peines pénales.",
@@ -736,6 +740,7 @@ const translations = {
     expDetail2: "使用HTML和CSS在WIX平台上开发和更新企业网站，改善了视觉和功能。",
     expDetail3: "使用Excel和Power BI实施改进和新功能，优化数据组织和分析。",
     expDetail4: "支持内部技术项目，包括新产品和数字解决方案的原型设计。",
+    accessSite: "访问网站",
     acadProjectTitle: "使用Kotlin开发应用程序",
     acadProjectDate: "2025年8月 - 2025年11月",
     acadProjectDesc: "团队开发Android应用程序，受合作企业Advocacia Céspedes Lourenço委托，专注于刑事计算器。",
@@ -849,6 +854,7 @@ const translations = {
     expDetail2: "दृश्य और कार्यात्मक सुधारों के लिए HTML और CSS का उपयोग करके WIX प्लेटफॉर्म पर संस्थागत वेबसाइट विकसित और अपडेट की।",
     expDetail3: "Excel और Power BI का उपयोग करके सुधार और नई सुविधाएँ लागू कीं, डेटा संगठन और विश्लेषण को अनुकूलित किया।",
     expDetail4: "नए उत्पादों और डिजिटल समाधानों के प्रोटोटाइपिंग सहित आंतरिक तकनीकी परियोजनाओं का समर्थन किया।",
+    accessSite: "साइट पर जाएं",
     acadProjectTitle: "कोटलिन के साथ ऐप विकास",
     acadProjectDate: "अगस्त 2025 - नवंबर 2025",
     acadProjectDesc: "साझेदार कंपनी Advocacia Céspedes Lourenço द्वारा अनुरोधित, आपराधिक कैलकुलेटर पर केंद्रित Android ऐप का सामूहिक विकास।",
@@ -962,6 +968,7 @@ const translations = {
     expDetail2: "طورت وحدثت الموقع المؤسسي على منصة WIX، باستخدام HTML و CSS للتحسينات البصرية والوظيفية.",
     expDetail3: "نفذت تحسينات وميزات جديدة باستخدام Excel و Power BI، مما أدى إلى تحسين تنظيم البيانات وتحليلها.",
     expDetail4: "دعمت المشاريع التكنولوجية الداخلية، بما في ذلك النماذج الأولية للمنتجات والحلول الرقمية الجديدة.",
+    accessSite: "الوصول إلى الموقع",
     acadProjectTitle: "تطوير التطبيقات باستخدام Kotlin",
     acadProjectDate: "أغسطس 2025 - نوفمبر 2025",
     acadProjectDesc: "تطوير جماعي لتطبيق أندرويد، بطلب من الشركة الشريكة Advocacia Céspedes Lourenço، يركز على آلة حاسبة للعقوبات الجنائية.",
@@ -1176,6 +1183,8 @@ languageSelect.addEventListener("change", (e) => {
           listItems[2].textContent = t.expDetail3;
           listItems[3].textContent = t.expDetail4;
         }
+        const overlaySpan = card.querySelector(".preview__overlay span");
+        if (overlaySpan) overlaySpan.textContent = t.accessSite;
       }
     }
     else if (text.includes("projetos acadêmicos") || text.includes("academic projects") || text.includes("proyectos académicos") || text.includes("projets académiques") || text.includes("学术项目") || text.includes("अकादमिक परियोजनाएं") || text.includes("المشاريع الأكاديمية")) {
