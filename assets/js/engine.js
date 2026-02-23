@@ -276,7 +276,13 @@ const translations = {
     footerAI: "Desenvolvido inicialmente de forma manual. IA utilizada para internacionalização, efeitos especiais e auxílio na formatação.",
     degreeName: "Engenharia da Computação",
     degreeDate: "Fev 2023 - Dez 2027",
-    experienceText: "Sem Experiências profissionais até o momento",
+    expJobTitle: "Assistente Comercial e Desenvolvimento Web",
+    expDate: "Jan/2026 – Atual",
+    expCompany: "Going Far Store",
+    expDetail1: "Realizei atendimento ao cliente e suporte às vendas via WhatsApp Business e Instagram, contribuindo para conversão e fidelização.",
+    expDetail2: "Desenvolvi e atualizei o site institucional na plataforma WIX, utilizando HTML e CSS para melhorias visuais e funcionais.",
+    expDetail3: "Implementei melhorias e novos recursos com uso de Excel e Power BI, otimizando organização e análise de dados.",
+    expDetail4: "Apoiei projetos tecnológicos internos, incluindo prototipagem de novos produtos e soluções digitais.",
     acadProjectTitle: "Desenvolvimento de Aplicativos com a Linguagem Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
     acadProjectDesc: "Desenvolvimento em grupo de um aplicativo Android, solicitado pela empresa parceira, Advocacia Céspedes Lourenço, com foco em uma calculadora penal.",
@@ -384,7 +390,13 @@ const translations = {
     footerAI: "Initially developed manually. AI used for internationalization, special effects, and formatting assistance.",
     degreeName: "Computer Engineering",
     degreeDate: "Feb 2023 - Dec 2027",
-    experienceText: "No professional experience yet",
+    expJobTitle: "Commercial Assistant and Web Development",
+    expDate: "Jan/2026 – Present",
+    expCompany: "Going Far Store",
+    expDetail1: "Provided customer service and sales support via WhatsApp Business and Instagram, contributing to conversion and retention.",
+    expDetail2: "Developed and updated the institutional website on the WIX platform, using HTML and CSS for visual and functional improvements.",
+    expDetail3: "Implemented improvements and new features using Excel and Power BI, optimizing data organization and analysis.",
+    expDetail4: "Supported internal technological projects, including prototyping of new products and digital solutions.",
     acadProjectTitle: "App Development with Kotlin",
     acadProjectDate: "Aug 2025 - Nov 2025",
     acadProjectDesc: "Group development of an Android app, requested by partner company Advocacia Céspedes Lourenço, focused on a criminal sentence calculator.",
@@ -491,7 +503,13 @@ const translations = {
     footerAI: "Desarrollado inicialmente de forma manual. IA utilizada para internacionalización, efectos especiales y asistencia en la formatación.",
     degreeName: "Ingeniería Informática",
     degreeDate: "Feb 2023 - Dic 2027",
-    experienceText: "Sin experiencia profesional por el momento",
+    expJobTitle: "Asistente Comercial y Desarrollo Web",
+    expDate: "Ene/2026 – Actualidad",
+    expCompany: "Going Far Store",
+    expDetail1: "Realicé atención al cliente y soporte de ventas a través de WhatsApp Business e Instagram, contribuyendo a la conversión y fidelización.",
+    expDetail2: "Desarrollé y actualicé el sitio web institucional en la plataforma WIX, utilizando HTML y CSS para mejoras visuales y funcionales.",
+    expDetail3: "Implementé mejoras y nuevas funcionalidades usando Excel y Power BI, optimizando la organización y análisis de datos.",
+    expDetail4: "Apoyé proyectos tecnológicos internos, incluyendo el prototipado de nuevos productos y soluciones digitales.",
     acadProjectTitle: "Desarrollo de Aplicaciones con Kotlin",
     acadProjectDate: "Ago 2025 - Nov 2025",
     acadProjectDesc: "Desarrollo en grupo de una aplicación Android, solicitada por la empresa socia Advocacia Céspedes Lourenço, enfocada en una calculadora penal.",
@@ -598,7 +616,13 @@ const translations = {
     footerAI: "Développé initialement manuellement. IA utilisée pour l'internationalisation, les effets spéciaux et l'aide à la mise en forme.",
     degreeName: "Ingénierie Informatique",
     degreeDate: "Fév 2023 - Déc 2027",
-    experienceText: "Aucune expérience professionnelle pour le moment",
+    expJobTitle: "Assistant Commercial et Développement Web",
+    expDate: "Jan/2026 – Présent",
+    expCompany: "Going Far Store",
+    expDetail1: "J'ai fourni un service client et un support aux ventes via WhatsApp Business et Instagram, contribuant à la conversion et à la fidélisation.",
+    expDetail2: "J'ai développé et mis à jour le site web institutionnel sur la plateforme WIX, en utilisant HTML et CSS pour des améliorations visuelles et fonctionnelles.",
+    expDetail3: "J'ai mis en œuvre des améliorations et de nouvelles fonctionnalités à l'aide d'Excel et de Power BI, en optimisant l'organisation et l'analyse des données.",
+    expDetail4: "J'ai soutenu des projets technologiques internes, y compris le prototypage de nouveaux produits et de solutions numériques.",
     acadProjectTitle: "Développement d'App avec Kotlin",
     acadProjectDate: "Août 2025 - Nov 2025",
     acadProjectDesc: "Développement en groupe d'une application Android, demandée par l'entreprise partenaire Advocacia Céspedes Lourenço, axée sur un calculateur de peines pénales.",
@@ -705,7 +729,13 @@ const translations = {
     footerAI: "最初手动开发。AI用于国际化、特效和格式调整协助。",
     degreeName: "计算机工程",
     degreeDate: "2023年2月 - 2027年12月",
-    experienceText: "目前没有专业经验",
+    expJobTitle: "商务助理与网页开发",
+    expDate: "2026年1月 – 至今",
+    expCompany: "Going Far Store",
+    expDetail1: "通过WhatsApp Business和Instagram提供客户服务和销售支持，促进了转化和客户留存。",
+    expDetail2: "使用HTML和CSS在WIX平台上开发和更新企业网站，改善了视觉和功能。",
+    expDetail3: "使用Excel和Power BI实施改进和新功能，优化数据组织和分析。",
+    expDetail4: "支持内部技术项目，包括新产品和数字解决方案的原型设计。",
     acadProjectTitle: "使用Kotlin开发应用程序",
     acadProjectDate: "2025年8月 - 2025年11月",
     acadProjectDesc: "团队开发Android应用程序，受合作企业Advocacia Céspedes Lourenço委托，专注于刑事计算器。",
@@ -812,7 +842,13 @@ const translations = {
     footerAI: "शुरू में मैन्युअल रूप से विकसित। AI का उपयोग अंतर्राष्ट्रीयकरण, विशेष प्रभाव और फॉर्मेटिंग सहायता के लिए किया गया।",
     degreeName: "कंप्यूटर इंजीनियरिंग",
     degreeDate: "फरवरी 2023 - दिसंबर 2027",
-    experienceText: "अभी तक कोई पेशेवर अनुभव नहीं",
+    expJobTitle: "वाणिज्यिक सहायक ऑपर वेब विकास",
+    expDate: "जनवरी/2026 – वर्तमान",
+    expCompany: "Going Far Store",
+    expDetail1: "WhatsApp Business और Instagram के माध्यम से ग्राहक सेवा और बिक्री सहायता प्रदान की, रूपांतरण और प्रतिधारण में योगदान दिया।",
+    expDetail2: "दृश्य और कार्यात्मक सुधारों के लिए HTML और CSS का उपयोग करके WIX प्लेटफॉर्म पर संस्थागत वेबसाइट विकसित और अपडेट की।",
+    expDetail3: "Excel और Power BI का उपयोग करके सुधार और नई सुविधाएँ लागू कीं, डेटा संगठन और विश्लेषण को अनुकूलित किया।",
+    expDetail4: "नए उत्पादों और डिजिटल समाधानों के प्रोटोटाइपिंग सहित आंतरिक तकनीकी परियोजनाओं का समर्थन किया।",
     acadProjectTitle: "कोटलिन के साथ ऐप विकास",
     acadProjectDate: "अगस्त 2025 - नवंबर 2025",
     acadProjectDesc: "साझेदार कंपनी Advocacia Céspedes Lourenço द्वारा अनुरोधित, आपराधिक कैलकुलेटर पर केंद्रित Android ऐप का सामूहिक विकास।",
@@ -919,7 +955,13 @@ const translations = {
     footerAI: "تم التطوير في البداية يدويًا. تم استخدام الذكاء الاصطناعي للتدويل والمؤثرات الخاصة والمساعدة في التنسيق.",
     degreeName: "هندسة الكمبيوتر",
     degreeDate: "فبراير 2023 - ديسمبر 2027",
-    experienceText: "لا توجد خبرة مهنية حتى الآن",
+    expJobTitle: "مساعد تجاري وتطوير الويب",
+    expDate: "يناير/2026 – الحاضر",
+    expCompany: "Going Far Store",
+    expDetail1: "قدمت خدمة العملاء ودعم المبيعات عبر WhatsApp Business و Instagram، مما ساهم في التحويل والاحتفاظ.",
+    expDetail2: "طورت وحدثت الموقع المؤسسي على منصة WIX، باستخدام HTML و CSS للتحسينات البصرية والوظيفية.",
+    expDetail3: "نفذت تحسينات وميزات جديدة باستخدام Excel و Power BI، مما أدى إلى تحسين تنظيم البيانات وتحليلها.",
+    expDetail4: "دعمت المشاريع التكنولوجية الداخلية، بما في ذلك النماذج الأولية للمنتجات والحلول الرقمية الجديدة.",
     acadProjectTitle: "تطوير التطبيقات باستخدام Kotlin",
     acadProjectDate: "أغسطس 2025 - نوفمبر 2025",
     acadProjectDesc: "تطوير جماعي لتطبيق أندرويد، بطلب من الشركة الشريكة Advocacia Céspedes Lourenço، يركز على آلة حاسبة للعقوبات الجنائية.",
@@ -1122,7 +1164,18 @@ languageSelect.addEventListener("change", (e) => {
       const card = h.closest(".about__card");
       if (card) {
         const h4 = card.querySelector("h4");
-        if (h4) h4.textContent = t.experienceText;
+        if (h4) h4.textContent = t.expJobTitle;
+        const span = card.querySelector("span");
+        if (span) span.textContent = t.expDate;
+        const p = card.querySelector("p");
+        if (p) p.textContent = t.expCompany;
+        const listItems = card.querySelectorAll(".about__item");
+        if (listItems.length >= 4) {
+          listItems[0].textContent = t.expDetail1;
+          listItems[1].textContent = t.expDetail2;
+          listItems[2].textContent = t.expDetail3;
+          listItems[3].textContent = t.expDetail4;
+        }
       }
     }
     else if (text.includes("projetos acadêmicos") || text.includes("academic projects") || text.includes("proyectos académicos") || text.includes("projets académiques") || text.includes("学术项目") || text.includes("अकादमिक परियोजनाएं") || text.includes("المشاريع الأكاديمية")) {
